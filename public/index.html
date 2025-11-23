@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>IPHyper - Network Analyzer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-dark: #0f172a;      /* Slate 900 */
+            --bg-card: #1e293b;      /* Slate 800 */
+            --bg-hover: #334155;     /* Slate 700 */
+            --border-color: #334155; /* Slate 700 */
+            --primary: #6366f1;      /* Indigo 500 */
+            --primary-glow: rgba(99, 102, 241, 0.5);
+            --text-main: #f1f5f9;    /* Slate 100 */
+            --text-muted: #94a3b8;   /* Slate 400 */
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+        }
+
+        #map {
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            background-color: var(--bg-dark);
+        }
+
+        /* Custom Dark Scrollbar */
+        .custom-scroll::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scroll::-webkit-scrollbar-track {
+            background: var(--bg-dark);
+        }
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background: #475569;
+            border-radius: 4px;
+        }
+        .custom-scroll::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+
+        .loader {
+            border: 3px solid rgba(255,255,255,0.1);
+            border-radius: 50%;
+            border-top: 3px solid var(--primary);
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Custom Marker Pulse Animation */
+        .marker-pulse {
+            position: relative;
+            width: 14px;
+            height: 14px;
+            background: var(--primary);
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary);
+        }
+        .marker-pulse::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 1px solid var(--primary);
+            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+        @keyframes pulse-ring {
+            0% { transform: translate(-50%, -50%) scale(0.5); opacity: 1; }
+            100% { transform: translate(-50%, -50%) scale(3); opacity: 0; }
+        }
+
+        /* Custom Popup Styling */
+        .leaflet-popup-content-wrapper {
+            background-color: var(--bg-card) !important;
+            border: 1px solid var(--border-color) !important;
+            color: var(--text-main) !important;
+            border-radius: 0.5rem !important;
+            box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.7) !important;
+            padding: 0 !important;
+            min-width: 280px;
+        }
+        .leaflet-popup-tip {
+            background-color: var(--bg-card) !important;
+            border: 1px solid var(--border-color) !important;
+        }
+        .leaflet-popup-content {
+            margin: 0 !important;
+            line-height: 1.5;
+        }
+        .leaflet-popup-close-button {
+            display: none; 
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .mobile-sidebar-hidden { transform: translateX(-100%); }
+            .mobile-sidebar-visible { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body class="h-screen flex flex-col overflow-hidden font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Header -->
+    <header class="bg-slate-800 border-b border-slate-700 shadow-lg z-30 px-4 py-3 md:px-6 md:py-4 flex justify-between items-center shrink-0">
+        <div class="flex items-center gap-3">
+            <button onclick="toggleSidebar()" class="md:hidden text-slate-300 hover:text-white p-1">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+            <div class="w-8 h-8 rounded-lg bg-indigo-500 flex items-center justify-center text-white shadow-lg shadow-indigo-500/20">
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h1 class="text-lg font-bold tracking-tight text-white hidden md:block" data-i18n="appTitle">IPHyper <span class="text-xs font-normal text-slate-400 ml-1 px-2 py-0.5 rounded-full bg-slate-700 border border-slate-600">Lite</span></h1>
+        </div>
+        
+        <div class="flex items-center gap-3">
+            <select id="lang-selector" onchange="changeLanguage(this.value)" class="bg-slate-900 text-slate-300 text-xs border border-slate-700 rounded px-2 py-1 outline-none focus:border-indigo-500">
+                <option value="en">English</option>
+                <option value="tr">Türkçe</option>
+                <option value="es">Español</option>
+                <option value="zh">中文</option>
+                <option value="hi">हिन्दी</option>
+                <option value="ar">العربية</option>
+                <option value="pt">Português</option>
+                <option value="bn">বাংলা</option>
+                <option value="ru">Русский</option>
+                <option value="ja">日本語</option>
+                <option value="de">Deutsch</option>
+                <option value="fr">Français</option>
+                <option value="id">Bahasa Indonesia</option>
+            </select>
+
+            <button onclick="openInputModal()" class="md:hidden text-xs bg-indigo-600 text-white px-3 py-1.5 rounded-lg shadow-sm" data-i18n="addBtn">
+                <i class="fa-solid fa-plus"></i> Add
+            </button>
+            <div class="text-xs font-mono text-slate-400 bg-slate-900 px-3 py-1.5 rounded border border-slate-700">
+                <span id="status-count" class="text-indigo-400 font-bold">0</span> / <span id="total-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="flex flex-1 h-full overflow-hidden relative">
+        
+        <!-- Sidebar -->
+        <aside id="sidebar" class="absolute md:relative inset-y-0 left-0 w-3/4 md:w-80 bg-slate-800 border-r border-slate-700 flex flex-col z-20 shadow-2xl md:shadow-xl transition-transform duration-300 mobile-sidebar-hidden md:transform-none">
+            <div class="p-4 border-b border-slate-700 bg-slate-800/50 flex justify-between items-center">
+                <div>
+                    <h2 class="font-semibold text-slate-200 text-sm" data-i18n="targetList">Target List</h2>
+                    <p class="text-[10px] uppercase tracking-wider text-slate-500 font-bold mt-1" data-i18n="processQueue">Process Queue</p>
+                </div>
+                <button onclick="toggleSidebar()" class="md:hidden text-slate-400 hover:text-white p-2">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+                <button onclick="openInputModal()" class="hidden md:block text-slate-400 hover:text-white transition-colors p-2 rounded hover:bg-slate-700">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </button>
+            </div>
+            
+            <div id="ip-list-container" class="flex-1 overflow-y-auto custom-scroll p-3 space-y-2">
+                <div class="flex flex-col items-center justify-center h-40 text-slate-500">
+                    <i class="fa-solid fa-layer-group text-3xl mb-3 opacity-20"></i>
+                    <p class="text-xs" data-i18n="waitingData">Waiting for data...</p>
+                </div>
+            </div>
+
+            <div class="p-4 border-t border-slate-700 bg-slate-800 flex gap-2">
+                <button onclick="openInputModal()" class="flex-1 bg-slate-700 hover:bg-slate-600 text-slate-200 font-medium py-2 px-2 rounded-lg text-xs border border-slate-600 transition-colors">
+                    <i class="fa-solid fa-pen mr-1"></i> <span data-i18n="editBtn">Edit</span>
+                </button>
+                <button onclick="startProcessing()" id="refresh-btn" class="flex-1 bg-slate-700 hover:bg-slate-600 text-slate-200 font-medium py-2 px-2 rounded-lg text-xs border border-slate-600 disabled:opacity-50 transition-colors">
+                    <i class="fa-solid fa-rotate-right mr-1"></i> <span data-i18n="retryBtn">Retry</span>
+                </button>
+            </div>
+        </aside>
+        
+        <div id="sidebar-overlay" onclick="toggleSidebar()" class="absolute inset-0 bg-black/50 z-10 hidden md:hidden backdrop-blur-sm transition-opacity"></div>
+
+        <!-- Map -->
+        <main class="flex-1 relative bg-slate-900 w-full h-full">
+            <div id="map"></div>
+            
+            <div class="absolute bottom-6 right-6 bg-slate-800/95 backdrop-blur border border-slate-700 p-4 rounded-lg shadow-2xl z-[500] max-w-xs hidden md:block">
+                <h3 class="font-bold text-slate-200 mb-2 text-xs uppercase tracking-wide flex items-center gap-2">
+                    <i class="fa-solid fa-shield-halved text-indigo-500"></i> <span data-i18n="systemStatus">System Status</span>
+                </h3>
+                <p class="text-[11px] text-slate-400 leading-relaxed" data-i18n="statusDesc">
+                    Hover over markers to view detailed data provided by ipwho.is.
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Input Modal -->
+    <div id="input-modal" class="fixed inset-0 z-[3000] bg-slate-950/80 flex items-center justify-center backdrop-blur-sm transition-opacity duration-300 p-4 hidden">
+        <div class="bg-slate-800 border border-slate-700 rounded-xl shadow-2xl w-full max-w-lg overflow-hidden transform transition-all scale-100 p-6">
+            <div class="text-center mb-6">
+                <div class="bg-slate-700 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4 border border-slate-600">
+                    <i class="fa-solid fa-terminal text-indigo-400 text-xl"></i>
+                </div>
+                <h2 class="text-xl font-bold text-white" data-i18n="defineTarget">Define Targets</h2>
+                <p class="text-slate-400 text-xs mt-2" data-i18n="enterIps">Enter IPv4 addresses to analyze.</p>
+            </div>
+
+            <textarea id="ip-input-textarea" class="w-full h-40 p-4 bg-slate-900 border border-slate-700 rounded-lg focus:outline-none focus:border-indigo-500 text-xs font-mono text-slate-300 mb-5 resize-none placeholder-slate-600" placeholder="8.8.8.8&#10;1.1.1.1, 192.168.1.1"></textarea>
+
+            <div class="flex flex-col gap-3">
+                <button onclick="processInputAndStart()" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 px-4 rounded-lg shadow-lg flex items-center justify-center gap-2 text-sm transition-all active:scale-95">
+                    <i class="fa-solid fa-play"></i> <span data-i18n="startAnalysis">Start Analysis</span>
+                </button>
+                <button onclick="fillDemoData()" class="text-xs text-slate-500 hover:text-indigo-400 transition cursor-pointer py-1" data-i18n="loadDemo">
+                    Load demo data
+                </button>
+                <button onclick="closeInputModal()" class="text-xs text-slate-500 hover:text-slate-300 mt-2" data-i18n="cancelBtn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error Modal -->
+    <div id="error-modal" class="fixed inset-0 z-[4000] bg-slate-950/90 flex items-center justify-center backdrop-blur-md transition-opacity duration-300 p-4 hidden">
+        <div class="bg-slate-800 border border-rose-900/50 rounded-xl shadow-2xl w-full max-w-md overflow-hidden p-6 relative">
+            <button onclick="closeErrorModal()" class="absolute top-4 right-4 text-slate-500 hover:text-white">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="text-center">
+                <div class="bg-rose-900/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 border border-rose-500/30">
+                    <i class="fa-solid fa-triangle-exclamation text-rose-500 text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2" data-i18n="errorTitle">Analysis Failed</h3>
+                <p class="text-slate-300 text-sm mb-4" id="error-message">Connection error.</p>
+                <button onclick="closeErrorModal()" class="bg-rose-600 hover:bg-rose-700 text-white px-6 py-2 rounded-lg text-sm font-medium transition">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script>
+        // --- CONFIGURATION ---
+        let currentLang = 'en';
+        const CACHE_KEY = 'iphyper_cache';
+        const MAX_CACHE_SIZE = 50;
+
+        // --- I18N DATA ---
+        const translations = {
+            en: {
+                appTitle: "IPHyper",
+                targetList: "Target List",
+                processQueue: "Process Queue",
+                waitingData: "Waiting for data...",
+                editBtn: "Edit",
+                retryBtn: "Retry",
+                systemStatus: "System Status",
+                statusDesc: "Hover over markers to view details. Data provided by ipwho.is.",
+                defineTarget: "Define Targets",
+                enterIps: "Enter IPv4 addresses to analyze.",
+                startAnalysis: "Start Analysis",
+                loadDemo: "Load demo data",
+                cancelBtn: "Cancel",
+                addBtn: "Add",
+                notFound: "Not Found",
+                waiting: "Waiting...",
+                emptyList: "List is empty",
+                invalidIP: "No valid IP addresses found.",
+                errorTitle: "Analysis Error",
+                quotaError: "The daily quota for the API service has been exceeded. Please try again later.",
+                
+                // Detail Labels
+                lbl_region: "Region",
+                lbl_postal: "Postal",
+                lbl_timezone: "Timezone",
+                lbl_asn: "ASN",
+                lbl_org: "Org",
+                lbl_coords: "Coords"
+            },
+            tr: {
+                appTitle: "IPHyper",
+                targetList: "Hedef Listesi",
+                processQueue: "İşlem Kuyruğu",
+                waitingData: "Veri bekleniyor...",
+                editBtn: "Düzenle",
+                retryBtn: "Tekrarla",
+                systemStatus: "Sistem Durumu",
+                statusDesc: "Detaylar için marker üzerine gelin. Veriler ipwho.is üzerinden sağlanır.",
+                defineTarget: "Hedef Tanımla",
+                enterIps: "Analiz edilecek IPv4 adreslerini girin.",
+                startAnalysis: "Analizi Başlat",
+                loadDemo: "Örnek veri yükle",
+                cancelBtn: "İptal",
+                addBtn: "Ekle",
+                notFound: "Bulunamadı",
+                waiting: "Bekleniyor...",
+                emptyList: "Liste boş",
+                invalidIP: "Geçerli IP adresi bulunamadı.",
+                errorTitle: "Analiz Hatası",
+                quotaError: "API servisi için günlük kota doldu. Lütfen daha sonra tekrar deneyin.",
+
+                lbl_region: "Bölge",
+                lbl_postal: "Posta Kodu",
+                lbl_timezone: "Saat Dilimi",
+                lbl_asn: "ASN",
+                lbl_org: "Kurum",
+                lbl_coords: "Konum"
+            },
+            es: { appTitle: "IPHyper", lbl_region: "Región", lbl_postal: "Postal", lbl_org: "Org", errorTitle: "Error", quotaError: "Cuota diaria excedida." },
+            zh: { appTitle: "IPHyper", lbl_region: "地区", lbl_postal: "邮政", lbl_org: "组织", errorTitle: "错误", quotaError: "超出每日配额。" },
+            hi: { appTitle: "IPHyper", lbl_region: "क्षेत्र", lbl_postal: "डाक", lbl_org: "संगठन", errorTitle: "त्रुटि", quotaError: "दैनिक कोटा पार हो गया।" },
+            ar: { appTitle: "IPHyper", lbl_region: "منطقة", lbl_postal: "بريدي", lbl_org: "منظمة", errorTitle: "خطأ", quotaError: "تجاوزت الحصة اليومية." },
+            pt: { appTitle: "IPHyper", lbl_region: "Região", lbl_postal: "Postal", lbl_org: "Org", errorTitle: "Erro", quotaError: "Cota diária excedida." },
+            bn: { appTitle: "IPHyper", lbl_region: "অঞ্চল", lbl_postal: "ডাক", lbl_org: "সংস্থা", errorTitle: "ত্রুটি", quotaError: "দৈনিক কোটা অতিক্রম করেছে।" },
+            ru: { appTitle: "IPHyper", lbl_region: "Регион", lbl_postal: "Почтовый", lbl_org: "Орг", errorTitle: "Ошибка", quotaError: "Дневная квота превышена." },
+            ja: { appTitle: "IPHyper", lbl_region: "地域", lbl_postal: "郵便", lbl_org: "組織", errorTitle: "エラー", quotaError: "1日の割り当てを超えました。" },
+            de: { appTitle: "IPHyper", lbl_region: "Region", lbl_postal: "PLZ", lbl_org: "Org", errorTitle: "Fehler", quotaError: "Tageskontingent überschritten." },
+            fr: { appTitle: "IPHyper", lbl_region: "Région", lbl_postal: "Postal", lbl_org: "Org", errorTitle: "Erreur", quotaError: "Quota quotidien dépassé." },
+            id: { appTitle: "IPHyper", lbl_region: "Wilayah", lbl_postal: "Pos", lbl_org: "Org", errorTitle: "Kesalahan", quotaError: "Kuota harian terlampaui." }
+        };
+
+        function detectLanguage() {
+            const browserLang = navigator.language.split('-')[0];
+            if (translations[browserLang]) {
+                return browserLang;
+            }
+            return 'en';
+        }
+
+        function changeLanguage(lang) {
+            currentLang = lang;
+            document.getElementById('lang-selector').value = lang;
+            
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (t(key)) {
+                    el.innerText = t(key);
+                }
+            });
+            
+            if (currentIpList.length === 0) {
+                 const container = document.getElementById('ip-list-container');
+                 container.innerHTML = `<div class="flex flex-col items-center justify-center h-40 text-slate-500"><i class="fa-solid fa-layer-group text-3xl mb-3 opacity-20"></i><p class="text-xs">${t('waitingData')}</p></div>`;
+            }
+        }
+
+        function t(key) {
+            if (translations[currentLang] && translations[currentLang][key]) {
+                return translations[currentLang][key];
+            }
+            if (translations['en'][key]) {
+                return translations['en'][key];
+            }
+            return key;
+        }
+
+        const demoIpList = [
+            "34.121.103.111", "35.238.222.131", "34.26.92.69", "35.227.4.55",
+            "34.173.253.20", "34.136.66.240", "35.237.17.157", "34.76.33.29",
+            "34.26.113.31", "34.78.94.193", "34.133.129.117", "35.187.115.48",
+            "34.139.218.52", "34.30.101.184", "34.72.59.204"
+        ];
+
+        let currentIpList = [];
+        let map;
+        let markers = {}; 
+        let bounds = L.latLngBounds(); 
+        let locationGroups = {}; 
+
+        // --- CACHE FUNCTIONS ---
+
+        function getCachedData(ip) {
+            try {
+                const cache = JSON.parse(localStorage.getItem(CACHE_KEY) || '[]');
+                const item = cache.find(i => i.ip === ip);
+                return item ? item.data : null;
+            } catch (e) {
+                console.warn("Cache read error:", e);
+                return null;
+            }
+        }
+
+        function addToCache(ip, data) {
+            try {
+                let cache = JSON.parse(localStorage.getItem(CACHE_KEY) || '[]');
+                // Remove existing entry for this IP (move to top)
+                cache = cache.filter(i => i.ip !== ip);
+                // Add new entry to start
+                cache.unshift({ip: ip, data: data});
+                // Trim cache
+                if (cache.length > MAX_CACHE_SIZE) {
+                    cache = cache.slice(0, MAX_CACHE_SIZE);
+                }
+                localStorage.setItem(CACHE_KEY, JSON.stringify(cache));
+            } catch (e) {
+                console.warn("Cache write error (likely quota):", e);
+            }
+        }
+
+        // --- UI FUNCTIONS ---
+        
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebar-overlay');
+            
+            sidebar.classList.toggle('mobile-sidebar-hidden');
+            sidebar.classList.toggle('mobile-sidebar-visible');
+            
+            if (sidebar.classList.contains('mobile-sidebar-visible')) {
+                overlay.classList.remove('hidden');
+            } else {
+                overlay.classList.add('hidden');
+            }
+        }
+
+        function openInputModal() {
+            document.getElementById('input-modal').classList.remove('hidden');
+            document.getElementById('input-modal').classList.add('flex');
+            const textarea = document.getElementById('ip-input-textarea');
+            textarea.value = ""; 
+            textarea.focus();
+            
+            const sidebar = document.getElementById('sidebar');
+            if(sidebar.classList.contains('mobile-sidebar-visible')) {
+                toggleSidebar();
+            }
+        }
+
+        function closeInputModal() {
+            document.getElementById('input-modal').classList.add('hidden');
+            document.getElementById('input-modal').classList.remove('flex');
+        }
+
+        function showErrorModal(message) {
+            document.getElementById('error-message').innerText = message;
+            document.getElementById('error-modal').classList.remove('hidden');
+            document.getElementById('error-modal').classList.add('flex');
+        }
+
+        function closeErrorModal() {
+            document.getElementById('error-modal').classList.add('hidden');
+            document.getElementById('error-modal').classList.remove('flex');
+        }
+
+        function fillDemoData() {
+            document.getElementById('ip-input-textarea').value = demoIpList.join('\n');
+        }
+
+        function processInputAndStart() {
+            const rawText = document.getElementById('ip-input-textarea').value;
+            const ips = rawText.split(/[\s,]+/).map(ip => ip.trim()).filter(ip => ip.length > 0);
+
+            if (ips.length === 0) return;
+
+            const validIps = ips.filter(ip => /^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$/.test(ip));
+            
+            if (validIps.length === 0) {
+                alert(t('invalidIP'));
+                return;
+            }
+
+            currentIpList = validIps;
+            closeInputModal();
+            startProcessing();
+        }
+
+        // --- MAP FUNCTIONS ---
+
+        function initMap() {
+            map = L.map('map', {
+                zoomControl: false 
+            }).setView([20, 0], 2);
+
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; OpenStreetMap &copy; CARTO',
+                subdomains: 'abcd',
+                maxZoom: 20
+            }).addTo(map);
+
+            L.control.zoom({ position: 'topright' }).addTo(map);
+        }
+
+        function initList() {
+            const container = document.getElementById('ip-list-container');
+            container.innerHTML = ''; 
+            
+            if (currentIpList.length === 0) {
+                container.innerHTML = `<div class="flex flex-col items-center justify-center h-40 text-slate-500"><i class="fa-solid fa-list-ul text-2xl mb-3 opacity-20"></i><p class="text-xs">${t('emptyList')}</p></div>`;
+                return;
+            }
+
+            currentIpList.forEach((ip) => {
+                const item = document.createElement('div');
+                item.id = `ip-item-${ip.replace(/\./g, '-')}`;
+                item.className = "bg-slate-700/30 border border-slate-700/50 p-3 rounded-lg flex items-center justify-between hover:bg-slate-700 hover:border-slate-600 cursor-pointer transition-all duration-200 group";
+                item.onclick = () => zoomToIP(ip);
+                
+                item.innerHTML = `
+                    <div class="flex flex-col">
+                        <span class="font-mono text-xs font-semibold text-slate-300 group-hover:text-white transition-colors">${ip}</span>
+                        <span class="text-[10px] text-slate-500 location-text mt-0.5">${t('waiting')}</span>
+                    </div>
+                    <div class="status-icon text-slate-600 text-xs">
+                        <i class="fa-regular fa-circle"></i>
+                    </div>
+                `;
+                container.appendChild(item);
+            });
+        }
+
+        function updateUI(ip, data, success) {
+            const safeId = ip.replace(/\./g, '-');
+            const item = document.getElementById(`ip-item-${safeId}`);
+            if (!item) return;
+
+            const locText = item.querySelector('.location-text');
+            const iconContainer = item.querySelector('.status-icon');
+
+            if (success) {
+                const locationStr = `${data.city}, ${data.country_code}`;
+                locText.innerText = locationStr;
+                locText.className = "text-[10px] text-emerald-400 location-text font-medium";
+                item.classList.add('border-emerald-900/30', 'bg-emerald-900/10');
+                iconContainer.innerHTML = `<i class="fa-solid fa-check text-emerald-500"></i>`;
+                
+                const locKey = `${data.latitude},${data.longitude}`;
+                if (!locationGroups[locKey]) {
+                    locationGroups[locKey] = [];
+                }
+                // Store Full Data
+                locationGroups[locKey].push({ip: ip, data: data});
+                
+                updateMarkers(locKey, data.latitude, data.longitude);
+                
+            } else {
+                locText.innerText = t('notFound');
+                locText.className = "text-[10px] text-rose-500 location-text";
+                iconContainer.innerHTML = `<i class="fa-solid fa-xmark text-rose-500"></i>`;
+            }
+        }
+
+        function setLoader(ip, isLoading) {
+            const safeId = ip.replace(/\./g, '-');
+            const item = document.getElementById(`ip-item-${safeId}`);
+            if (!item) return;
+            const iconContainer = item.querySelector('.status-icon');
+            if (isLoading) iconContainer.innerHTML = `<div class="loader w-3 h-3"></div>`;
+        }
+
+        // Updated Marker Logic: Rich Detail Popup with Hover Bridge + SCROLL
+        function updateMarkers(locKey, lat, lng) {
+            if (markers[locKey]) {
+                map.removeLayer(markers[locKey]);
+            }
+
+            const group = locationGroups[locKey];
+            if (!group || group.length === 0) return;
+
+            // Generate Rich Content - Added max-h and scroll here
+            let content = `<div class="p-3 min-w-[300px] text-left max-h-[300px] overflow-y-auto custom-scroll">`;
+            
+            group.forEach((item, index) => {
+                const d = item.data;
+                const isLast = index === group.length - 1;
+                
+                content += `
+                    <div class="${isLast ? '' : 'border-b border-slate-700 pb-3 mb-3'}">
+                        <!-- Header with Flag and Country -->
+                        <div class="flex items-center gap-2 mb-2">
+                            ${d.flag ? `<img src="${d.flag.img}" class="w-6 h-4 object-cover rounded shadow-sm border border-slate-600" alt="${d.country_code}">` : ''}
+                            <span class="font-bold text-white text-sm">${d.city}, ${d.country}</span>
+                            <span class="text-[10px] text-slate-400 font-mono ml-auto">${d.continent_code}</span>
+                        </div>
+
+                        <!-- IP & Org -->
+                        <div class="mb-2 bg-slate-800/50 p-2 rounded border border-slate-700/50">
+                             <div class="flex items-center justify-between mb-1">
+                                <span class="font-mono text-xs text-indigo-400 font-bold">${item.ip}</span>
+                                <span class="text-[10px] text-slate-500">ASN: ${d.connection.asn || '-'}</span>
+                             </div>
+                             <div class="text-[10px] text-slate-300 truncate" title="${d.connection.org}">
+                                <i class="fa-solid fa-building text-slate-500 mr-1"></i> ${d.connection.org || d.connection.isp}
+                             </div>
+                             <div class="text-[10px] text-slate-400 truncate mt-0.5">
+                                <i class="fa-solid fa-globe text-slate-500 mr-1"></i> ${d.connection.domain || '-'}
+                             </div>
+                        </div>
+
+                        <!-- Grid Details -->
+                        <div class="grid grid-cols-2 gap-x-2 gap-y-1 text-[10px]">
+                            <div class="text-slate-400"><span class="text-slate-500">${t('lbl_region')}:</span> ${d.region}</div>
+                            <div class="text-slate-400"><span class="text-slate-500">${t('lbl_postal')}:</span> ${d.postal}</div>
+                            <div class="text-slate-400"><span class="text-slate-500">${t('lbl_timezone')}:</span> ${d.timezone.id}</div>
+                            <div class="text-slate-400"><span class="text-slate-500">UTC:</span> ${d.timezone.utc}</div>
+                            <div class="col-span-2 text-slate-500 border-t border-slate-700/50 pt-1 mt-1 font-mono text-[9px] text-center">
+                                ${d.latitude}, ${d.longitude}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            content += `</div>`;
+            
+            const icon = L.divIcon({
+                className: 'custom-div-icon',
+                html: `<div class="marker-pulse"></div>`,
+                iconSize: [14, 14],
+                iconAnchor: [7, 7]
+            });
+
+            const marker = L.marker([lat, lng], { icon: icon }).addTo(map);
+            
+            const popup = L.popup({
+                offset: [0, -5],
+                closeButton: false,
+                autoClose: false,
+                closeOnClick: false,
+                className: 'custom-popup-hover' 
+            }).setContent(content);
+
+            marker.bindPopup(popup);
+
+            let timer;
+
+            marker.on('mouseover', function () {
+                if (timer) clearTimeout(timer);
+                this.openPopup();
+            });
+
+            marker.on('mouseout', function () {
+                timer = setTimeout(() => {
+                    this.closePopup();
+                }, 300); 
+            });
+
+            marker.on('popupopen', function (e) {
+                const wrapper = e.popup.getElement(); 
+
+                if (wrapper) {
+                    wrapper.addEventListener('mouseover', () => {
+                        if (timer) clearTimeout(timer);
+                    });
+                    
+                    wrapper.addEventListener('mouseout', () => {
+                        timer = setTimeout(() => {
+                            marker.closePopup();
+                        }, 300);
+                    });
+                }
+            });
+
+            markers[locKey] = marker;
+            group.forEach(item => {
+                markers[item.ip] = locKey; 
+            });
+
+            bounds.extend([lat, lng]);
+            map.fitBounds(bounds, { padding: [50, 50], maxZoom: 10 });
+        }
+
+        function zoomToIP(ip) {
+            const locKey = markers[ip];
+            if (locKey && markers[locKey]) {
+                const marker = markers[locKey];
+                const sidebar = document.getElementById('sidebar');
+                if(sidebar.classList.contains('mobile-sidebar-visible')) {
+                    toggleSidebar();
+                }
+                
+                map.flyTo(marker.getLatLng(), 8, { duration: 1.2 });
+                setTimeout(() => {
+                    marker.openPopup();
+                }, 1300);
+            }
+        }
+
+        async function fetchIPData(ip) {
+            try {
+                // Check Cache First
+                const cached = getCachedData(ip);
+                if (cached) {
+                    // Use cached data
+                    updateUI(ip, cached, true);
+                    return;
+                }
+
+                // If not cached, fetch
+                setLoader(ip, true);
+                await new Promise(r => setTimeout(r, 250)); 
+                const response = await fetch(`https://ipwho.is/${ip}`);
+                const data = await response.json();
+                setLoader(ip, false);
+
+                if (data.success) {
+                    // Save to cache on success
+                    addToCache(ip, data);
+                    updateUI(ip, data, true);
+                } else {
+                    // Check if failure is due to Quota
+                    if (data.message && (data.message.toLowerCase().includes("rate") || data.message.toLowerCase().includes("quota"))) {
+                         showErrorModal(t('quotaError'));
+                    }
+                    updateUI(ip, null, false);
+                }
+            } catch (error) {
+                console.error("Fetch Hatası:", error);
+                setLoader(ip, false);
+                updateUI(ip, null, false);
+            }
+        }
+
+        async function startProcessing() {
+            if (markers) {
+                Object.values(markers).forEach(val => {
+                    if (typeof val === 'object' && val.removeFrom) {
+                        val.removeFrom(map);
+                    }
+                });
+            }
+            markers = {};
+            locationGroups = {};
+            bounds = L.latLngBounds();
+            
+            const btn = document.getElementById('refresh-btn');
+            const countDisplay = document.getElementById('status-count');
+            const totalDisplay = document.getElementById('total-count');
+            
+            btn.disabled = true;
+            
+            const originalIcon = btn.innerHTML;
+            btn.innerHTML = `<div class="loader w-3 h-3 border-slate-400 border-t-transparent mx-auto"></div>`;
+            
+            initList();
+
+            totalDisplay.innerText = currentIpList.length;
+            countDisplay.innerText = "0";
+
+            let processedCount = 0;
+            
+            for (const ip of currentIpList) {
+                await fetchIPData(ip);
+                processedCount++;
+                countDisplay.innerText = processedCount;
+            }
+
+            btn.disabled = false;
+            btn.innerHTML = originalIcon;
+        }
+
+        window.onload = function() {
+            // Detect Language
+            const detected = detectLanguage();
+            changeLanguage(detected);
+
+            initMap();
+            openInputModal();
+        };
+
+    </script>
+</body>
+</html>
