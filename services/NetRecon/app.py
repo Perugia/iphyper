@@ -2,6 +2,7 @@ import os
 from flask import Flask, jsonify, request
 from geoip_resolver import lookup_ip
 from config import *
+from datetime import datetime, timedelta
 
 app = Flask(__name__)
 
@@ -16,7 +17,11 @@ def ip_lookup(ip):
 	print(f"[+] Lookup request for IP: {ip}")
 	raw = request.args.get("raw", "0").lower() in ("1", "true", "yes")
 
+	start_time = datetime.now()
 	data, err = lookup_ip(ip)
+	end_time = datetime.now()
+	elapsed_time = (end_time - start_time).total_seconds()
+	print(f"[+] Lookup completed in {elapsed_time:.2f} seconds.")
 
 	if err == "invalid_ip":
 		return jsonify({"error": "invalid_ip", "ip": ip}), 400

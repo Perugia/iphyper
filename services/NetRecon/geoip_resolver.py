@@ -5,6 +5,8 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+from domain_resolver import _fetch_peeringdb_website_html, _normalize_domain
+from config import *
 import geoip2.database
 import geoip2.errors
 
@@ -40,7 +42,9 @@ def _lookup_connection(ip: str) -> dict | None:
 		print(f"[!] ASN lookup error for IP {ip}: {e}")
 		return None
 
-	domain = _lookup_domain(ip)
+	asn_number = asn.autonomous_system_number
+
+	domain = _lookup_domain(ip, asn_number)
 
 	connection: dict = {
 		"asn": asn.autonomous_system_number,
@@ -54,22 +58,50 @@ def _lookup_connection(ip: str) -> dict | None:
 
 	return connection
 
-
-def _lookup_domain(ip: str) -> str | None:
-	"""Resolve a best-effort domain name for an IP using reverse DNS."""
+def _reverse_dns(ip: str) -> str | None:
+	"""Resolve a best-effort domain name for an IP using reverse DNS (PTR)."""
 	try:
-		hostname, _, _ = socket.gethostbyaddr(ip)
+		hostname, aliases, _ = socket.gethostbyaddr(ip)
 	except (socket.herror, socket.gaierror):
+		# No PTR record or DNS failure
 		return None
 	except Exception as e:
 		print(f"[!] Reverse DNS error for IP {ip}: {e}")
 		return None
 
+	if not hostname:
+		return None
+
+	# Convert full hostname to a bare domain (e.g. x.y.google.com -> google.com)
 	parts = hostname.split(".")
 	if len(parts) >= 2:
-		return ".".join(parts[-2:])
+		return ".".join(parts[-2:]).lower()
 
-	return hostname or None
+	return hostname.lower()
+
+def _lookup_domain(ip: str, asn_number: int | None = None) -> str | None:
+	"""Resolve domain using reverse DNS first, then PeeringDB website as fallback."""
+	# 1) Try reverse DNS
+	domain = _reverse_dns(ip)
+	if domain:
+		return domain
+
+	# 2) Try PeeringDB website if ASN is known
+	if asn_number is not None:
+		#Calculate time taken to fetch PeeringDB website
+		if DEBUG_MODE:
+			start_time = datetime.now()
+		website_url = _fetch_peeringdb_website_html(asn_number)
+		if DEBUG_MODE:
+			end_time = datetime.now()
+			elapsed_time = (end_time - start_time).total_seconds()
+			print(f"[+] PeeringDB website fetch for ASN {asn_number} took {elapsed_time:.2f} seconds.")
+		if website_url:
+			normalized = _normalize_domain(website_url)
+			if normalized:
+				return normalized
+
+	return None
 
 
 def _build_timezone_info(tz_name: str | None) -> dict | None:

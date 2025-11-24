@@ -44,6 +44,7 @@ NetRecon/
 ├─ geoip_resolver.py
 ├─ requirements.txt
 ├─ generate_country_meta.py
+├─ domain_resolver.py
 └─ data/
    ├─ GeoLite2-City.mmdb
    ├─ GeoLite2-ASN.mmdb
