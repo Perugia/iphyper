@@ -4,6 +4,8 @@ from pathlib import Path
 import geoip2.database
 import geoip2.errors
 
+from config import *
+
 # Base directory
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -21,8 +23,29 @@ try:
 	with COUNTRY_META_FILE.open("r", encoding="utf-8") as f:
 		COUNTRY_META = json.load(f)
 except FileNotFoundError:
+	if DEBUG_MODE:
+		print(f"[!] Country metadata file not found: {COUNTRY_META_FILE}")
 	COUNTRY_META = {}  # Safe fallback
 
+if DEBUG_MODE:
+	print(f"[+] Loaded country metadata for {len(COUNTRY_META)} countries.")
+
+
+def _lookup_connection(ip: str):
+	"""Resolve ASN data (ISP, ASN, route) for an IP."""
+	try:
+		asn = asn_reader.asn(ip)
+	except geoip2.errors.AddressNotFoundError:
+		return None
+	except Exception:
+		return None
+
+	return {
+		"asn": asn.autonomous_system_number,
+		"org": asn.autonomous_system_organization,
+		"isp": asn.autonomous_system_organization,
+		"route": str(asn.network),
+	}
 
 def lookup_ip(ip: str):
 	"""Resolve an IP using GeoLite2 (City + ASN) + country metadata."""
@@ -31,14 +54,20 @@ def lookup_ip(ip: str):
 	try:
 		ip_obj = ipaddress.ip_address(ip)
 	except ValueError:
+		if DEBUG_MODE:
+			print(f"[!] Invalid IP address format: {ip}")
 		return None, "invalid_ip"
 
 	# Resolve CITY record
 	try:
 		city = city_reader.city(ip)
 	except geoip2.errors.AddressNotFoundError:
+		if DEBUG_MODE:
+			print(f"[!] City not found for IP: {ip}")
 		return None, "not_found"
 	except Exception as e:
+		if DEBUG_MODE:
+			print(f"[!] City lookup error for IP {ip}: {e}")
 		return None, f"lookup_error:{e}"
 
 	continent = city.continent.names.get("en") if city.continent else None
@@ -72,6 +101,9 @@ def lookup_ip(ip: str):
 
 	# Inject country metadata (if exists)
 	cc = result["country_code"]
+	if DEBUG_MODE:
+		print(cc)
+		print(COUNTRY_META.keys())
 	if cc and cc in COUNTRY_META:
 		meta = COUNTRY_META[cc]
 		result["calling_code"] = meta.get("calling_code")
@@ -89,23 +121,12 @@ def lookup_ip(ip: str):
 	# Resolve ASN connection details
 	connection = _lookup_connection(ip)
 	if connection:
+		if DEBUG_MODE:
+			print(f"[+] ASN lookup succeeded for IP: {ip}")
 		result["connection"] = connection
+	else:
+		if DEBUG_MODE:
+			print(f"[!] ASN lookup failed for IP: {ip}")
 
 	return result, None
 
-
-def _lookup_connection(ip: str):
-	"""Resolve ASN data (ISP, ASN, route) for an IP."""
-	try:
-		asn = asn_reader.asn(ip)
-	except geoip2.errors.AddressNotFoundError:
-		return None
-	except Exception:
-		return None
-
-	return {
-		"asn": asn.autonomous_system_number,
-		"org": asn.autonomous_system_organization,
-		"isp": asn.autonomous_system_organization,
-		"route": str(asn.network),
-	}

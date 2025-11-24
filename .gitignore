@@ -170,3 +170,5 @@ node_modules/
 
 # Data
 api/data/*.mmdb
+
+*.pyc

@@ -1,0 +1,3564 @@
+{
+  "AG": {
+    "name": "Antigua and Barbuda",
+    "calling_code": "+1268",
+    "capital": "Saint John's",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ag.svg",
+      "png": "https://flagcdn.com/w320/ag.png"
+    }
+  },
+  "BT": {
+    "name": "Bhutan",
+    "calling_code": "+975",
+    "capital": "Thimphu",
+    "borders": [
+      "CHN",
+      "IND"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/bt.svg",
+      "png": "https://flagcdn.com/w320/bt.png"
+    }
+  },
+  "IT": {
+    "name": "Italy",
+    "calling_code": "+39",
+    "capital": "Rome",
+    "borders": [
+      "AUT",
+      "FRA",
+      "SMR",
+      "SVN",
+      "CHE",
+      "VAT"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/it.svg",
+      "png": "https://flagcdn.com/w320/it.png"
+    }
+  },
+  "TV": {
+    "name": "Tuvalu",
+    "calling_code": "+688",
+    "capital": "Funafuti",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/tv.svg",
+      "png": "https://flagcdn.com/w320/tv.png"
+    }
+  },
+  "AI": {
+    "name": "Anguilla",
+    "calling_code": "+1264",
+    "capital": "The Valley",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ai.svg",
+      "png": "https://flagcdn.com/w320/ai.png"
+    }
+  },
+  "AU": {
+    "name": "Australia",
+    "calling_code": "+61",
+    "capital": "Canberra",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/au.svg",
+      "png": "https://flagcdn.com/w320/au.png"
+    }
+  },
+  "BZ": {
+    "name": "Belize",
+    "calling_code": "+501",
+    "capital": "Belmopan",
+    "borders": [
+      "GTM",
+      "MEX"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/bz.svg",
+      "png": "https://flagcdn.com/w320/bz.png"
+    }
+  },
+  "VU": {
+    "name": "Vanuatu",
+    "calling_code": "+678",
+    "capital": "Port Vila",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/vu.svg",
+      "png": "https://flagcdn.com/w320/vu.png"
+    }
+  },
+  "BY": {
+    "name": "Belarus",
+    "calling_code": "+375",
+    "capital": "Minsk",
+    "borders": [
+      "LVA",
+      "LTU",
+      "POL",
+      "RUS",
+      "UKR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/by.svg",
+      "png": "https://flagcdn.com/w320/by.png"
+    }
+  },
+  "MU": {
+    "name": "Mauritius",
+    "calling_code": "+230",
+    "capital": "Port Louis",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/mu.svg",
+      "png": "https://flagcdn.com/w320/mu.png"
+    }
+  },
+  "LA": {
+    "name": "Laos",
+    "calling_code": "+856",
+    "capital": "Vientiane",
+    "borders": [
+      "MMR",
+      "KHM",
+      "CHN",
+      "THA",
+      "VNM"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/la.svg",
+      "png": "https://flagcdn.com/w320/la.png"
+    }
+  },
+  "SN": {
+    "name": "Senegal",
+    "calling_code": "+221",
+    "capital": "Dakar",
+    "borders": [
+      "GMB",
+      "GIN",
+      "GNB",
+      "MLI",
+      "MRT"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/sn.svg",
+      "png": "https://flagcdn.com/w320/sn.png"
+    }
+  },
+  "TR": {
+    "name": "Turkey",
+    "calling_code": "+90",
+    "capital": "Ankara",
+    "borders": [
+      "ARM",
+      "AZE",
+      "BGR",
+      "GEO",
+      "GRC",
+      "IRN",
+      "IRQ",
+      "SYR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/tr.svg",
+      "png": "https://flagcdn.com/w320/tr.png"
+    }
+  },
+  "BO": {
+    "name": "Bolivia",
+    "calling_code": "+591",
+    "capital": "Sucre",
+    "borders": [
+      "ARG",
+      "BRA",
+      "CHL",
+      "PRY",
+      "PER"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/bo.svg",
+      "png": "https://flagcdn.com/w320/bo.png"
+    }
+  },
+  "LK": {
+    "name": "Sri Lanka",
+    "calling_code": "+94",
+    "capital": "Sri Jayawardenepura Kotte",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/lk.svg",
+      "png": "https://flagcdn.com/w320/lk.png"
+    }
+  },
+  "NF": {
+    "name": "Norfolk Island",
+    "calling_code": "+672",
+    "capital": "Kingston",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/nf.svg",
+      "png": "https://flagcdn.com/w320/nf.png"
+    }
+  },
+  "CN": {
+    "name": "China",
+    "calling_code": "+86",
+    "capital": "Beijing",
+    "borders": [
+      "AFG",
+      "BTN",
+      "MMR",
+      "HKG",
+      "IND",
+      "KAZ",
+      "NPL",
+      "PRK",
+      "KGZ",
+      "LAO",
+      "MAC",
+      "MNG",
+      "PAK",
+      "RUS",
+      "TJK",
+      "VNM"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/cn.svg",
+      "png": "https://flagcdn.com/w320/cn.png"
+    }
+  },
+  "BQ": {
+    "name": "Caribbean Netherlands",
+    "calling_code": "+599",
+    "capital": "Kralendijk",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/bq.svg",
+      "png": "https://flagcdn.com/w320/bq.png"
+    }
+  },
+  "GG": {
+    "name": "Guernsey",
+    "calling_code": "+44",
+    "capital": "St. Peter Port",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/gg.svg",
+      "png": "https://flagcdn.com/w320/gg.png"
+    }
+  },
+  "SD": {
+    "name": "Sudan",
+    "calling_code": "+249",
+    "capital": "Khartoum",
+    "borders": [
+      "CAF",
+      "TCD",
+      "EGY",
+      "ERI",
+      "ETH",
+      "LBY",
+      "SSD"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/sd.svg",
+      "png": "https://flagcdn.com/w320/sd.png"
+    }
+  },
+  "YT": {
+    "name": "Mayotte",
+    "calling_code": "+262",
+    "capital": "Mamoudzou",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/yt.svg",
+      "png": "https://flagcdn.com/w320/yt.png"
+    }
+  },
+  "BL": {
+    "name": "Saint Barthélemy",
+    "calling_code": "+590",
+    "capital": "Gustavia",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/bl.svg",
+      "png": "https://flagcdn.com/w320/bl.png"
+    }
+  },
+  "VA": {
+    "name": "Vatican City",
+    "calling_code": "+3906698",
+    "capital": "Vatican City",
+    "borders": [
+      "ITA"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/va.svg",
+      "png": "https://flagcdn.com/w320/va.png"
+    }
+  },
+  "TC": {
+    "name": "Turks and Caicos Islands",
+    "calling_code": "+1649",
+    "capital": "Cockburn Town",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/tc.svg",
+      "png": "https://flagcdn.com/w320/tc.png"
+    }
+  },
+  "CW": {
+    "name": "Curaçao",
+    "calling_code": "+599",
+    "capital": "Willemstad",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/cw.svg",
+      "png": "https://flagcdn.com/w320/cw.png"
+    }
+  },
+  "BW": {
+    "name": "Botswana",
+    "calling_code": "+267",
+    "capital": "Gaborone",
+    "borders": [
+      "NAM",
+      "ZAF",
+      "ZMB",
+      "ZWE"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/bw.svg",
+      "png": "https://flagcdn.com/w320/bw.png"
+    }
+  },
+  "BJ": {
+    "name": "Benin",
+    "calling_code": "+229",
+    "capital": "Porto-Novo",
+    "borders": [
+      "BFA",
+      "NER",
+      "NGA",
+      "TGO"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/bj.svg",
+      "png": "https://flagcdn.com/w320/bj.png"
+    }
+  },
+  "LT": {
+    "name": "Lithuania",
+    "calling_code": "+370",
+    "capital": "Vilnius",
+    "borders": [
+      "BLR",
+      "LVA",
+      "POL",
+      "RUS"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/lt.svg",
+      "png": "https://flagcdn.com/w320/lt.png"
+    }
+  },
+  "MS": {
+    "name": "Montserrat",
+    "calling_code": "+1664",
+    "capital": "Plymouth",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ms.svg",
+      "png": "https://flagcdn.com/w320/ms.png"
+    }
+  },
+  "VG": {
+    "name": "British Virgin Islands",
+    "calling_code": "+1284",
+    "capital": "Road Town",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/vg.svg",
+      "png": "https://flagcdn.com/w320/vg.png"
+    }
+  },
+  "BI": {
+    "name": "Burundi",
+    "calling_code": "+257",
+    "capital": "Gitega",
+    "borders": [
+      "COD",
+      "RWA",
+      "TZA"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/bi.svg",
+      "png": "https://flagcdn.com/w320/bi.png"
+    }
+  },
+  "UM": {
+    "name": "United States Minor Outlying Islands",
+    "calling_code": "+268",
+    "capital": "Washington DC",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/um.svg",
+      "png": "https://flagcdn.com/w320/um.png"
+    }
+  },
+  "IE": {
+    "name": "Ireland",
+    "calling_code": "+353",
+    "capital": "Dublin",
+    "borders": [
+      "GBR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ie.svg",
+      "png": "https://flagcdn.com/w320/ie.png"
+    }
+  },
+  "SB": {
+    "name": "Solomon Islands",
+    "calling_code": "+677",
+    "capital": "Honiara",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/sb.svg",
+      "png": "https://flagcdn.com/w320/sb.png"
+    }
+  },
+  "BM": {
+    "name": "Bermuda",
+    "calling_code": "+1441",
+    "capital": "Hamilton",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/bm.svg",
+      "png": "https://flagcdn.com/w320/bm.png"
+    }
+  },
+  "FI": {
+    "name": "Finland",
+    "calling_code": "+358",
+    "capital": "Helsinki",
+    "borders": [
+      "NOR",
+      "SWE",
+      "RUS"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/fi.svg",
+      "png": "https://flagcdn.com/w320/fi.png"
+    }
+  },
+  "PE": {
+    "name": "Peru",
+    "calling_code": "+51",
+    "capital": "Lima",
+    "borders": [
+      "BOL",
+      "BRA",
+      "CHL",
+      "COL",
+      "ECU"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/pe.svg",
+      "png": "https://flagcdn.com/w320/pe.png"
+    }
+  },
+  "BD": {
+    "name": "Bangladesh",
+    "calling_code": "+880",
+    "capital": "Dhaka",
+    "borders": [
+      "MMR",
+      "IND"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/bd.svg",
+      "png": "https://flagcdn.com/w320/bd.png"
+    }
+  },
+  "DK": {
+    "name": "Denmark",
+    "calling_code": "+45",
+    "capital": "Copenhagen",
+    "borders": [
+      "DEU"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/dk.svg",
+      "png": "https://flagcdn.com/w320/dk.png"
+    }
+  },
+  "VC": {
+    "name": "Saint Vincent and the Grenadines",
+    "calling_code": "+1784",
+    "capital": "Kingstown",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/vc.svg",
+      "png": "https://flagcdn.com/w320/vc.png"
+    }
+  },
+  "DO": {
+    "name": "Dominican Republic",
+    "calling_code": "+1809",
+    "capital": "Santo Domingo",
+    "borders": [
+      "HTI"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/do.svg",
+      "png": "https://flagcdn.com/w320/do.png"
+    }
+  },
+  "MD": {
+    "name": "Moldova",
+    "calling_code": "+373",
+    "capital": "Chișinău",
+    "borders": [
+      "ROU",
+      "UKR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/md.svg",
+      "png": "https://flagcdn.com/w320/md.png"
+    }
+  },
+  "BG": {
+    "name": "Bulgaria",
+    "calling_code": "+359",
+    "capital": "Sofia",
+    "borders": [
+      "GRC",
+      "MKD",
+      "ROU",
+      "SRB",
+      "TUR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/bg.svg",
+      "png": "https://flagcdn.com/w320/bg.png"
+    }
+  },
+  "CR": {
+    "name": "Costa Rica",
+    "calling_code": "+506",
+    "capital": "San José",
+    "borders": [
+      "NIC",
+      "PAN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/cr.svg",
+      "png": "https://flagcdn.com/w320/cr.png"
+    }
+  },
+  "NA": {
+    "name": "Namibia",
+    "calling_code": "+264",
+    "capital": "Windhoek",
+    "borders": [
+      "AGO",
+      "BWA",
+      "ZAF",
+      "ZMB"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/na.svg",
+      "png": "https://flagcdn.com/w320/na.png"
+    }
+  },
+  "SJ": {
+    "name": "Svalbard and Jan Mayen",
+    "calling_code": "+4779",
+    "capital": "Longyearbyen",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/sj.svg",
+      "png": "https://flagcdn.com/w320/sj.png"
+    }
+  },
+  "LU": {
+    "name": "Luxembourg",
+    "calling_code": "+352",
+    "capital": "Luxembourg",
+    "borders": [
+      "BEL",
+      "FRA",
+      "DEU"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/lu.svg",
+      "png": "https://flagcdn.com/w320/lu.png"
+    }
+  },
+  "RU": {
+    "name": "Russia",
+    "calling_code": "+73",
+    "capital": "Moscow",
+    "borders": [
+      "AZE",
+      "BLR",
+      "CHN",
+      "EST",
+      "FIN",
+      "GEO",
+      "KAZ",
+      "PRK",
+      "LVA",
+      "LTU",
+      "MNG",
+      "NOR",
+      "POL",
+      "UKR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ru.svg",
+      "png": "https://flagcdn.com/w320/ru.png"
+    }
+  },
+  "AE": {
+    "name": "United Arab Emirates",
+    "calling_code": "+971",
+    "capital": "Abu Dhabi",
+    "borders": [
+      "OMN",
+      "SAU"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ae.svg",
+      "png": "https://flagcdn.com/w320/ae.png"
+    }
+  },
+  "SX": {
+    "name": "Sint Maarten",
+    "calling_code": "+1721",
+    "capital": "Philipsburg",
+    "borders": [
+      "MAF"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/sx.svg",
+      "png": "https://flagcdn.com/w320/sx.png"
+    }
+  },
+  "BS": {
+    "name": "Bahamas",
+    "calling_code": "+1242",
+    "capital": "Nassau",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/bs.svg",
+      "png": "https://flagcdn.com/w320/bs.png"
+    }
+  },
+  "JP": {
+    "name": "Japan",
+    "calling_code": "+81",
+    "capital": "Tokyo",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/jp.svg",
+      "png": "https://flagcdn.com/w320/jp.png"
+    }
+  },
+  "NG": {
+    "name": "Nigeria",
+    "calling_code": "+234",
+    "capital": "Abuja",
+    "borders": [
+      "BEN",
+      "CMR",
+      "TCD",
+      "NER"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ng.svg",
+      "png": "https://flagcdn.com/w320/ng.png"
+    }
+  },
+  "GH": {
+    "name": "Ghana",
+    "calling_code": "+233",
+    "capital": "Accra",
+    "borders": [
+      "BFA",
+      "CIV",
+      "TGO"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/gh.svg",
+      "png": "https://flagcdn.com/w320/gh.png"
+    }
+  },
+  "SL": {
+    "name": "Sierra Leone",
+    "calling_code": "+232",
+    "capital": "Freetown",
+    "borders": [
+      "GIN",
+      "LBR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/sl.svg",
+      "png": "https://flagcdn.com/w320/sl.png"
+    }
+  },
+  "PM": {
+    "name": "Saint Pierre and Miquelon",
+    "calling_code": "+508",
+    "capital": "Saint-Pierre",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/pm.svg",
+      "png": "https://flagcdn.com/w320/pm.png"
+    }
+  },
+  "AL": {
+    "name": "Albania",
+    "calling_code": "+355",
+    "capital": "Tirana",
+    "borders": [
+      "MNE",
+      "GRC",
+      "MKD",
+      "UNK"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/al.svg",
+      "png": "https://flagcdn.com/w320/al.png"
+    }
+  },
+  "TK": {
+    "name": "Tokelau",
+    "calling_code": "+690",
+    "capital": "Fakaofo",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/tk.svg",
+      "png": "https://flagcdn.com/w320/tk.png"
+    }
+  },
+  "SH": {
+    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "calling_code": "+290",
+    "capital": "Jamestown",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/sh.svg",
+      "png": "https://flagcdn.com/w320/sh.png"
+    }
+  },
+  "TO": {
+    "name": "Tonga",
+    "calling_code": "+676",
+    "capital": "Nuku'alofa",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/to.svg",
+      "png": "https://flagcdn.com/w320/to.png"
+    }
+  },
+  "TM": {
+    "name": "Turkmenistan",
+    "calling_code": "+993",
+    "capital": "Ashgabat",
+    "borders": [
+      "AFG",
+      "IRN",
+      "KAZ",
+      "UZB"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/tm.svg",
+      "png": "https://flagcdn.com/w320/tm.png"
+    }
+  },
+  "DJ": {
+    "name": "Djibouti",
+    "calling_code": "+253",
+    "capital": "Djibouti",
+    "borders": [
+      "ERI",
+      "ETH",
+      "SOM"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/dj.svg",
+      "png": "https://flagcdn.com/w320/dj.png"
+    }
+  },
+  "CF": {
+    "name": "Central African Republic",
+    "calling_code": "+236",
+    "capital": "Bangui",
+    "borders": [
+      "CMR",
+      "TCD",
+      "COD",
+      "COG",
+      "SSD",
+      "SDN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/cf.svg",
+      "png": "https://flagcdn.com/w320/cf.png"
+    }
+  },
+  "LB": {
+    "name": "Lebanon",
+    "calling_code": "+961",
+    "capital": "Beirut",
+    "borders": [
+      "ISR",
+      "SYR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/lb.svg",
+      "png": "https://flagcdn.com/w320/lb.png"
+    }
+  },
+  "LV": {
+    "name": "Latvia",
+    "calling_code": "+371",
+    "capital": "Riga",
+    "borders": [
+      "BLR",
+      "EST",
+      "LTU",
+      "RUS"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/lv.svg",
+      "png": "https://flagcdn.com/w320/lv.png"
+    }
+  },
+  "CC": {
+    "name": "Cocos (Keeling) Islands",
+    "calling_code": "+61",
+    "capital": "West Island",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/cc.svg",
+      "png": "https://flagcdn.com/w320/cc.png"
+    }
+  },
+  "GM": {
+    "name": "Gambia",
+    "calling_code": "+220",
+    "capital": "Banjul",
+    "borders": [
+      "SEN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/gm.svg",
+      "png": "https://flagcdn.com/w320/gm.png"
+    }
+  },
+  "HN": {
+    "name": "Honduras",
+    "calling_code": "+504",
+    "capital": "Tegucigalpa",
+    "borders": [
+      "GTM",
+      "SLV",
+      "NIC"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/hn.svg",
+      "png": "https://flagcdn.com/w320/hn.png"
+    }
+  },
+  "NU": {
+    "name": "Niue",
+    "calling_code": "+683",
+    "capital": "Alofi",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/nu.svg",
+      "png": "https://flagcdn.com/w320/nu.png"
+    }
+  },
+  "MR": {
+    "name": "Mauritania",
+    "calling_code": "+222",
+    "capital": "Nouakchott",
+    "borders": [
+      "DZA",
+      "MLI",
+      "SEN",
+      "ESH"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/mr.svg",
+      "png": "https://flagcdn.com/w320/mr.png"
+    }
+  },
+  "XK": {
+    "name": "Kosovo",
+    "calling_code": "+383",
+    "capital": "Pristina",
+    "borders": [
+      "ALB",
+      "MKD",
+      "MNE",
+      "SRB"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/xk.svg",
+      "png": "https://flagcdn.com/w320/xk.png"
+    }
+  },
+  "WF": {
+    "name": "Wallis and Futuna",
+    "calling_code": "+681",
+    "capital": "Mata-Utu",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/wf.svg",
+      "png": "https://flagcdn.com/w320/wf.png"
+    }
+  },
+  "GS": {
+    "name": "South Georgia",
+    "calling_code": "+500",
+    "capital": "King Edward Point",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/gs.svg",
+      "png": "https://flagcdn.com/w320/gs.png"
+    }
+  },
+  "PF": {
+    "name": "French Polynesia",
+    "calling_code": "+689",
+    "capital": "Papeetē",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/pf.svg",
+      "png": "https://flagcdn.com/w320/pf.png"
+    }
+  },
+  "TG": {
+    "name": "Togo",
+    "calling_code": "+228",
+    "capital": "Lomé",
+    "borders": [
+      "BEN",
+      "BFA",
+      "GHA"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/tg.svg",
+      "png": "https://flagcdn.com/w320/tg.png"
+    }
+  },
+  "BE": {
+    "name": "Belgium",
+    "calling_code": "+32",
+    "capital": "Brussels",
+    "borders": [
+      "FRA",
+      "DEU",
+      "LUX",
+      "NLD"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/be.svg",
+      "png": "https://flagcdn.com/w320/be.png"
+    }
+  },
+  "ZM": {
+    "name": "Zambia",
+    "calling_code": "+260",
+    "capital": "Lusaka",
+    "borders": [
+      "AGO",
+      "BWA",
+      "COD",
+      "MWI",
+      "MOZ",
+      "NAM",
+      "TZA",
+      "ZWE"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/zm.svg",
+      "png": "https://flagcdn.com/w320/zm.png"
+    }
+  },
+  "KY": {
+    "name": "Cayman Islands",
+    "calling_code": "+1345",
+    "capital": "George Town",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ky.svg",
+      "png": "https://flagcdn.com/w320/ky.png"
+    }
+  },
+  "PN": {
+    "name": "Pitcairn Islands",
+    "calling_code": "+64",
+    "capital": "Adamstown",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/pn.svg",
+      "png": "https://flagcdn.com/w320/pn.png"
+    }
+  },
+  "CK": {
+    "name": "Cook Islands",
+    "calling_code": "+682",
+    "capital": "Avarua",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ck.svg",
+      "png": "https://flagcdn.com/w320/ck.png"
+    }
+  },
+  "MG": {
+    "name": "Madagascar",
+    "calling_code": "+261",
+    "capital": "Antananarivo",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/mg.svg",
+      "png": "https://flagcdn.com/w320/mg.png"
+    }
+  },
+  "ME": {
+    "name": "Montenegro",
+    "calling_code": "+382",
+    "capital": "Podgorica",
+    "borders": [
+      "ALB",
+      "BIH",
+      "HRV",
+      "UNK",
+      "SRB"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/me.svg",
+      "png": "https://flagcdn.com/w320/me.png"
+    }
+  },
+  "KR": {
+    "name": "South Korea",
+    "calling_code": "+82",
+    "capital": "Seoul",
+    "borders": [
+      "PRK"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/kr.svg",
+      "png": "https://flagcdn.com/w320/kr.png"
+    }
+  },
+  "ET": {
+    "name": "Ethiopia",
+    "calling_code": "+251",
+    "capital": "Addis Ababa",
+    "borders": [
+      "DJI",
+      "ERI",
+      "KEN",
+      "SOM",
+      "SSD",
+      "SDN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/et.svg",
+      "png": "https://flagcdn.com/w320/et.png"
+    }
+  },
+  "MN": {
+    "name": "Mongolia",
+    "calling_code": "+976",
+    "capital": "Ulan Bator",
+    "borders": [
+      "CHN",
+      "RUS"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/mn.svg",
+      "png": "https://flagcdn.com/w320/mn.png"
+    }
+  },
+  "SK": {
+    "name": "Slovakia",
+    "calling_code": "+421",
+    "capital": "Bratislava",
+    "borders": [
+      "AUT",
+      "CZE",
+      "HUN",
+      "POL",
+      "UKR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/sk.svg",
+      "png": "https://flagcdn.com/w320/sk.png"
+    }
+  },
+  "CU": {
+    "name": "Cuba",
+    "calling_code": "+53",
+    "capital": "Havana",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/cu.svg",
+      "png": "https://flagcdn.com/w320/cu.png"
+    }
+  },
+  "AQ": {
+    "name": "Antarctica",
+    "calling_code": null,
+    "capital": null,
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/aq.svg",
+      "png": "https://flagcdn.com/w320/aq.png"
+    }
+  },
+  "GT": {
+    "name": "Guatemala",
+    "calling_code": "+502",
+    "capital": "Guatemala City",
+    "borders": [
+      "BLZ",
+      "SLV",
+      "HND",
+      "MEX"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/gt.svg",
+      "png": "https://flagcdn.com/w320/gt.png"
+    }
+  },
+  "GF": {
+    "name": "French Guiana",
+    "calling_code": "+594",
+    "capital": "Cayenne",
+    "borders": [
+      "BRA",
+      "SUR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/gf.svg",
+      "png": "https://flagcdn.com/w320/gf.png"
+    }
+  },
+  "NO": {
+    "name": "Norway",
+    "calling_code": "+47",
+    "capital": "Oslo",
+    "borders": [
+      "FIN",
+      "SWE",
+      "RUS"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/no.svg",
+      "png": "https://flagcdn.com/w320/no.png"
+    }
+  },
+  "GD": {
+    "name": "Grenada",
+    "calling_code": "+1473",
+    "capital": "St. George's",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/gd.svg",
+      "png": "https://flagcdn.com/w320/gd.png"
+    }
+  },
+  "RE": {
+    "name": "Réunion",
+    "calling_code": "+262",
+    "capital": "Saint-Denis",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/re.svg",
+      "png": "https://flagcdn.com/w320/re.png"
+    }
+  },
+  "CL": {
+    "name": "Chile",
+    "calling_code": "+56",
+    "capital": "Santiago",
+    "borders": [
+      "ARG",
+      "BOL",
+      "PER"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/cl.svg",
+      "png": "https://flagcdn.com/w320/cl.png"
+    }
+  },
+  "CO": {
+    "name": "Colombia",
+    "calling_code": "+57",
+    "capital": "Bogotá",
+    "borders": [
+      "BRA",
+      "ECU",
+      "PAN",
+      "PER",
+      "VEN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/co.svg",
+      "png": "https://flagcdn.com/w320/co.png"
+    }
+  },
+  "SA": {
+    "name": "Saudi Arabia",
+    "calling_code": "+966",
+    "capital": "Riyadh",
+    "borders": [
+      "IRQ",
+      "JOR",
+      "KWT",
+      "OMN",
+      "QAT",
+      "ARE",
+      "YEM"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/sa.svg",
+      "png": "https://flagcdn.com/w320/sa.png"
+    }
+  },
+  "IL": {
+    "name": "Israel",
+    "calling_code": "+972",
+    "capital": "Jerusalem",
+    "borders": [
+      "EGY",
+      "JOR",
+      "LBN",
+      "PSE",
+      "SYR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/il.svg",
+      "png": "https://flagcdn.com/w320/il.png"
+    }
+  },
+  "DE": {
+    "name": "Germany",
+    "calling_code": "+49",
+    "capital": "Berlin",
+    "borders": [
+      "AUT",
+      "BEL",
+      "CZE",
+      "DNK",
+      "FRA",
+      "LUX",
+      "NLD",
+      "POL",
+      "CHE"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/de.svg",
+      "png": "https://flagcdn.com/w320/de.png"
+    }
+  },
+  "NZ": {
+    "name": "New Zealand",
+    "calling_code": "+64",
+    "capital": "Wellington",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/nz.svg",
+      "png": "https://flagcdn.com/w320/nz.png"
+    }
+  },
+  "GL": {
+    "name": "Greenland",
+    "calling_code": "+299",
+    "capital": "Nuuk",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/gl.svg",
+      "png": "https://flagcdn.com/w320/gl.png"
+    }
+  },
+  "KG": {
+    "name": "Kyrgyzstan",
+    "calling_code": "+996",
+    "capital": "Bishkek",
+    "borders": [
+      "CHN",
+      "KAZ",
+      "TJK",
+      "UZB"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/kg.svg",
+      "png": "https://flagcdn.com/w320/kg.png"
+    }
+  },
+  "SV": {
+    "name": "El Salvador",
+    "calling_code": "+503",
+    "capital": "San Salvador",
+    "borders": [
+      "GTM",
+      "HND"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/sv.svg",
+      "png": "https://flagcdn.com/w320/sv.png"
+    }
+  },
+  "FO": {
+    "name": "Faroe Islands",
+    "calling_code": "+298",
+    "capital": "Tórshavn",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/fo.svg",
+      "png": "https://flagcdn.com/w320/fo.png"
+    }
+  },
+  "PW": {
+    "name": "Palau",
+    "calling_code": "+680",
+    "capital": "Ngerulmud",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/pw.svg",
+      "png": "https://flagcdn.com/w320/pw.png"
+    }
+  },
+  "MT": {
+    "name": "Malta",
+    "calling_code": "+356",
+    "capital": "Valletta",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/mt.svg",
+      "png": "https://flagcdn.com/w320/mt.png"
+    }
+  },
+  "SY": {
+    "name": "Syria",
+    "calling_code": "+963",
+    "capital": "Damascus",
+    "borders": [
+      "IRQ",
+      "ISR",
+      "JOR",
+      "LBN",
+      "TUR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/sy.svg",
+      "png": "https://flagcdn.com/w320/sy.png"
+    }
+  },
+  "TL": {
+    "name": "Timor-Leste",
+    "calling_code": "+670",
+    "capital": "Dili",
+    "borders": [
+      "IDN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/tl.svg",
+      "png": "https://flagcdn.com/w320/tl.png"
+    }
+  },
+  "HR": {
+    "name": "Croatia",
+    "calling_code": "+385",
+    "capital": "Zagreb",
+    "borders": [
+      "BIH",
+      "HUN",
+      "MNE",
+      "SRB",
+      "SVN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/hr.svg",
+      "png": "https://flagcdn.com/w320/hr.png"
+    }
+  },
+  "PG": {
+    "name": "Papua New Guinea",
+    "calling_code": "+675",
+    "capital": "Port Moresby",
+    "borders": [
+      "IDN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/pg.svg",
+      "png": "https://flagcdn.com/w320/pg.png"
+    }
+  },
+  "NL": {
+    "name": "Netherlands",
+    "calling_code": "+31",
+    "capital": "Amsterdam",
+    "borders": [
+      "BEL",
+      "DEU"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/nl.svg",
+      "png": "https://flagcdn.com/w320/nl.png"
+    }
+  },
+  "LR": {
+    "name": "Liberia",
+    "calling_code": "+231",
+    "capital": "Monrovia",
+    "borders": [
+      "GIN",
+      "CIV",
+      "SLE"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/lr.svg",
+      "png": "https://flagcdn.com/w320/lr.png"
+    }
+  },
+  "SO": {
+    "name": "Somalia",
+    "calling_code": "+252",
+    "capital": "Mogadishu",
+    "borders": [
+      "DJI",
+      "ETH",
+      "KEN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/so.svg",
+      "png": "https://flagcdn.com/w320/so.png"
+    }
+  },
+  "VE": {
+    "name": "Venezuela",
+    "calling_code": "+58",
+    "capital": "Caracas",
+    "borders": [
+      "BRA",
+      "COL",
+      "GUY"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ve.svg",
+      "png": "https://flagcdn.com/w320/ve.png"
+    }
+  },
+  "HT": {
+    "name": "Haiti",
+    "calling_code": "+509",
+    "capital": "Port-au-Prince",
+    "borders": [
+      "DOM"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ht.svg",
+      "png": "https://flagcdn.com/w320/ht.png"
+    }
+  },
+  "DZ": {
+    "name": "Algeria",
+    "calling_code": "+213",
+    "capital": "Algiers",
+    "borders": [
+      "TUN",
+      "LBY",
+      "NER",
+      "ESH",
+      "MRT",
+      "MLI",
+      "MAR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/dz.svg",
+      "png": "https://flagcdn.com/w320/dz.png"
+    }
+  },
+  "MP": {
+    "name": "Northern Mariana Islands",
+    "calling_code": "+1670",
+    "capital": "Saipan",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/mp.svg",
+      "png": "https://flagcdn.com/w320/mp.png"
+    }
+  },
+  "MF": {
+    "name": "Saint Martin",
+    "calling_code": "+590",
+    "capital": "Marigot",
+    "borders": [
+      "SXM"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/mf.svg",
+      "png": "https://flagcdn.com/w320/mf.png"
+    }
+  },
+  "HM": {
+    "name": "Heard Island and McDonald Islands",
+    "calling_code": null,
+    "capital": null,
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/hm.svg",
+      "png": "https://flagcdn.com/w320/hm.png"
+    }
+  },
+  "AW": {
+    "name": "Aruba",
+    "calling_code": "+297",
+    "capital": "Oranjestad",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/aw.svg",
+      "png": "https://flagcdn.com/w320/aw.png"
+    }
+  },
+  "EG": {
+    "name": "Egypt",
+    "calling_code": "+20",
+    "capital": "Cairo",
+    "borders": [
+      "ISR",
+      "LBY",
+      "PSE",
+      "SDN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/eg.svg",
+      "png": "https://flagcdn.com/w320/eg.png"
+    }
+  },
+  "MW": {
+    "name": "Malawi",
+    "calling_code": "+265",
+    "capital": "Lilongwe",
+    "borders": [
+      "MOZ",
+      "TZA",
+      "ZMB"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/mw.svg",
+      "png": "https://flagcdn.com/w320/mw.png"
+    }
+  },
+  "GQ": {
+    "name": "Equatorial Guinea",
+    "calling_code": "+240",
+    "capital": "Malabo",
+    "borders": [
+      "CMR",
+      "GAB"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/gq.svg",
+      "png": "https://flagcdn.com/w320/gq.png"
+    }
+  },
+  "VI": {
+    "name": "United States Virgin Islands",
+    "calling_code": "+1340",
+    "capital": "Charlotte Amalie",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/vi.svg",
+      "png": "https://flagcdn.com/w320/vi.png"
+    }
+  },
+  "EC": {
+    "name": "Ecuador",
+    "calling_code": "+593",
+    "capital": "Quito",
+    "borders": [
+      "COL",
+      "PER"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ec.svg",
+      "png": "https://flagcdn.com/w320/ec.png"
+    }
+  },
+  "UZ": {
+    "name": "Uzbekistan",
+    "calling_code": "+998",
+    "capital": "Tashkent",
+    "borders": [
+      "AFG",
+      "KAZ",
+      "KGZ",
+      "TJK",
+      "TKM"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/uz.svg",
+      "png": "https://flagcdn.com/w320/uz.png"
+    }
+  },
+  "GA": {
+    "name": "Gabon",
+    "calling_code": "+241",
+    "capital": "Libreville",
+    "borders": [
+      "CMR",
+      "COG",
+      "GNQ"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ga.svg",
+      "png": "https://flagcdn.com/w320/ga.png"
+    }
+  },
+  "SS": {
+    "name": "South Sudan",
+    "calling_code": "+211",
+    "capital": "Juba",
+    "borders": [
+      "CAF",
+      "COD",
+      "ETH",
+      "KEN",
+      "SDN",
+      "UGA"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ss.svg",
+      "png": "https://flagcdn.com/w320/ss.png"
+    }
+  },
+  "IR": {
+    "name": "Iran",
+    "calling_code": "+98",
+    "capital": "Tehran",
+    "borders": [
+      "AFG",
+      "ARM",
+      "AZE",
+      "IRQ",
+      "PAK",
+      "TUR",
+      "TKM"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ir.svg",
+      "png": "https://flagcdn.com/w320/ir.png"
+    }
+  },
+  "KZ": {
+    "name": "Kazakhstan",
+    "calling_code": "+76",
+    "capital": "Astana",
+    "borders": [
+      "CHN",
+      "KGZ",
+      "RUS",
+      "TKM",
+      "UZB"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/kz.svg",
+      "png": "https://flagcdn.com/w320/kz.png"
+    }
+  },
+  "NI": {
+    "name": "Nicaragua",
+    "calling_code": "+505",
+    "capital": "Managua",
+    "borders": [
+      "CRI",
+      "HND"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ni.svg",
+      "png": "https://flagcdn.com/w320/ni.png"
+    }
+  },
+  "IS": {
+    "name": "Iceland",
+    "calling_code": "+354",
+    "capital": "Reykjavik",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/is.svg",
+      "png": "https://flagcdn.com/w320/is.png"
+    }
+  },
+  "SI": {
+    "name": "Slovenia",
+    "calling_code": "+386",
+    "capital": "Ljubljana",
+    "borders": [
+      "AUT",
+      "HRV",
+      "ITA",
+      "HUN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/si.svg",
+      "png": "https://flagcdn.com/w320/si.png"
+    }
+  },
+  "GP": {
+    "name": "Guadeloupe",
+    "calling_code": "+590",
+    "capital": "Basse-Terre",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/gp.svg",
+      "png": "https://flagcdn.com/w320/gp.png"
+    }
+  },
+  "CM": {
+    "name": "Cameroon",
+    "calling_code": "+237",
+    "capital": "Yaoundé",
+    "borders": [
+      "CAF",
+      "TCD",
+      "COG",
+      "GNQ",
+      "GAB",
+      "NGA"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/cm.svg",
+      "png": "https://flagcdn.com/w320/cm.png"
+    }
+  },
+  "AR": {
+    "name": "Argentina",
+    "calling_code": "+54",
+    "capital": "Buenos Aires",
+    "borders": [
+      "BOL",
+      "BRA",
+      "CHL",
+      "PRY",
+      "URY"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ar.svg",
+      "png": "https://flagcdn.com/w320/ar.png"
+    }
+  },
+  "AZ": {
+    "name": "Azerbaijan",
+    "calling_code": "+994",
+    "capital": "Baku",
+    "borders": [
+      "ARM",
+      "GEO",
+      "IRN",
+      "RUS",
+      "TUR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/az.svg",
+      "png": "https://flagcdn.com/w320/az.png"
+    }
+  },
+  "UG": {
+    "name": "Uganda",
+    "calling_code": "+256",
+    "capital": "Kampala",
+    "borders": [
+      "COD",
+      "KEN",
+      "RWA",
+      "SSD",
+      "TZA"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ug.svg",
+      "png": "https://flagcdn.com/w320/ug.png"
+    }
+  },
+  "NE": {
+    "name": "Niger",
+    "calling_code": "+227",
+    "capital": "Niamey",
+    "borders": [
+      "DZA",
+      "BEN",
+      "BFA",
+      "TCD",
+      "LBY",
+      "MLI",
+      "NGA"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ne.svg",
+      "png": "https://flagcdn.com/w320/ne.png"
+    }
+  },
+  "CX": {
+    "name": "Christmas Island",
+    "calling_code": "+61",
+    "capital": "Flying Fish Cove",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/cx.svg",
+      "png": "https://flagcdn.com/w320/cx.png"
+    }
+  },
+  "MM": {
+    "name": "Myanmar",
+    "calling_code": "+95",
+    "capital": "Naypyidaw",
+    "borders": [
+      "BGD",
+      "CHN",
+      "IND",
+      "LAO",
+      "THA"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/mm.svg",
+      "png": "https://flagcdn.com/w320/mm.png"
+    }
+  },
+  "PL": {
+    "name": "Poland",
+    "calling_code": "+48",
+    "capital": "Warsaw",
+    "borders": [
+      "BLR",
+      "CZE",
+      "DEU",
+      "LTU",
+      "RUS",
+      "SVK",
+      "UKR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/pl.svg",
+      "png": "https://flagcdn.com/w320/pl.png"
+    }
+  },
+  "JO": {
+    "name": "Jordan",
+    "calling_code": "+962",
+    "capital": "Amman",
+    "borders": [
+      "IRQ",
+      "ISR",
+      "PSE",
+      "SAU",
+      "SYR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/jo.svg",
+      "png": "https://flagcdn.com/w320/jo.png"
+    }
+  },
+  "HK": {
+    "name": "Hong Kong",
+    "calling_code": "+852",
+    "capital": "City of Victoria",
+    "borders": [
+      "CHN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/hk.svg",
+      "png": "https://flagcdn.com/w320/hk.png"
+    }
+  },
+  "CD": {
+    "name": "DR Congo",
+    "calling_code": "+243",
+    "capital": "Kinshasa",
+    "borders": [
+      "AGO",
+      "BDI",
+      "CAF",
+      "COG",
+      "RWA",
+      "SSD",
+      "TZA",
+      "UGA",
+      "ZMB"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/cd.svg",
+      "png": "https://flagcdn.com/w320/cd.png"
+    }
+  },
+  "ER": {
+    "name": "Eritrea",
+    "calling_code": "+291",
+    "capital": "Asmara",
+    "borders": [
+      "DJI",
+      "ETH",
+      "SDN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/er.svg",
+      "png": "https://flagcdn.com/w320/er.png"
+    }
+  },
+  "KI": {
+    "name": "Kiribati",
+    "calling_code": "+686",
+    "capital": "South Tarawa",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ki.svg",
+      "png": "https://flagcdn.com/w320/ki.png"
+    }
+  },
+  "MH": {
+    "name": "Marshall Islands",
+    "calling_code": "+692",
+    "capital": "Majuro",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/mh.svg",
+      "png": "https://flagcdn.com/w320/mh.png"
+    }
+  },
+  "BF": {
+    "name": "Burkina Faso",
+    "calling_code": "+226",
+    "capital": "Ouagadougou",
+    "borders": [
+      "BEN",
+      "CIV",
+      "GHA",
+      "MLI",
+      "NER",
+      "TGO"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/bf.svg",
+      "png": "https://flagcdn.com/w320/bf.png"
+    }
+  },
+  "ZW": {
+    "name": "Zimbabwe",
+    "calling_code": "+263",
+    "capital": "Harare",
+    "borders": [
+      "BWA",
+      "MOZ",
+      "ZAF",
+      "ZMB"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/zw.svg",
+      "png": "https://flagcdn.com/w320/zw.png"
+    }
+  },
+  "KE": {
+    "name": "Kenya",
+    "calling_code": "+254",
+    "capital": "Nairobi",
+    "borders": [
+      "ETH",
+      "SOM",
+      "SSD",
+      "TZA",
+      "UGA"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ke.svg",
+      "png": "https://flagcdn.com/w320/ke.png"
+    }
+  },
+  "KM": {
+    "name": "Comoros",
+    "calling_code": "+269",
+    "capital": "Moroni",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/km.svg",
+      "png": "https://flagcdn.com/w320/km.png"
+    }
+  },
+  "GI": {
+    "name": "Gibraltar",
+    "calling_code": "+350",
+    "capital": "Gibraltar",
+    "borders": [
+      "ESP"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/gi.svg",
+      "png": "https://flagcdn.com/w320/gi.png"
+    }
+  },
+  "BN": {
+    "name": "Brunei",
+    "calling_code": "+673",
+    "capital": "Bandar Seri Begawan",
+    "borders": [
+      "MYS"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/bn.svg",
+      "png": "https://flagcdn.com/w320/bn.png"
+    }
+  },
+  "SE": {
+    "name": "Sweden",
+    "calling_code": "+46",
+    "capital": "Stockholm",
+    "borders": [
+      "FIN",
+      "NOR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/se.svg",
+      "png": "https://flagcdn.com/w320/se.png"
+    }
+  },
+  "LS": {
+    "name": "Lesotho",
+    "calling_code": "+266",
+    "capital": "Maseru",
+    "borders": [
+      "ZAF"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ls.svg",
+      "png": "https://flagcdn.com/w320/ls.png"
+    }
+  },
+  "IM": {
+    "name": "Isle of Man",
+    "calling_code": "+44",
+    "capital": "Douglas",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/im.svg",
+      "png": "https://flagcdn.com/w320/im.png"
+    }
+  },
+  "FM": {
+    "name": "Micronesia",
+    "calling_code": "+691",
+    "capital": "Palikir",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/fm.svg",
+      "png": "https://flagcdn.com/w320/fm.png"
+    }
+  },
+  "TZ": {
+    "name": "Tanzania",
+    "calling_code": "+255",
+    "capital": "Dodoma",
+    "borders": [
+      "BDI",
+      "COD",
+      "KEN",
+      "MWI",
+      "MOZ",
+      "RWA",
+      "UGA",
+      "ZMB"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/tz.svg",
+      "png": "https://flagcdn.com/w320/tz.png"
+    }
+  },
+  "CV": {
+    "name": "Cape Verde",
+    "calling_code": "+238",
+    "capital": "Praia",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/cv.svg",
+      "png": "https://flagcdn.com/w320/cv.png"
+    }
+  },
+  "AF": {
+    "name": "Afghanistan",
+    "calling_code": "+93",
+    "capital": "Kabul",
+    "borders": [
+      "IRN",
+      "PAK",
+      "TKM",
+      "UZB",
+      "TJK",
+      "CHN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/af.svg",
+      "png": "https://flagcdn.com/w320/af.png"
+    }
+  },
+  "AD": {
+    "name": "Andorra",
+    "calling_code": "+376",
+    "capital": "Andorra la Vella",
+    "borders": [
+      "FRA",
+      "ESP"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ad.svg",
+      "png": "https://flagcdn.com/w320/ad.png"
+    }
+  },
+  "GR": {
+    "name": "Greece",
+    "calling_code": "+30",
+    "capital": "Athens",
+    "borders": [
+      "ALB",
+      "BGR",
+      "TUR",
+      "MKD"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/gr.svg",
+      "png": "https://flagcdn.com/w320/gr.png"
+    }
+  },
+  "VN": {
+    "name": "Vietnam",
+    "calling_code": "+84",
+    "capital": "Hanoi",
+    "borders": [
+      "KHM",
+      "CHN",
+      "LAO"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/vn.svg",
+      "png": "https://flagcdn.com/w320/vn.png"
+    }
+  },
+  "TF": {
+    "name": "French Southern and Antarctic Lands",
+    "calling_code": "+262",
+    "capital": "Port-aux-Français",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/tf.svg",
+      "png": "https://flagcdn.com/w320/tf.png"
+    }
+  },
+  "IQ": {
+    "name": "Iraq",
+    "calling_code": "+964",
+    "capital": "Baghdad",
+    "borders": [
+      "IRN",
+      "JOR",
+      "KWT",
+      "SAU",
+      "SYR",
+      "TUR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/iq.svg",
+      "png": "https://flagcdn.com/w320/iq.png"
+    }
+  },
+  "LY": {
+    "name": "Libya",
+    "calling_code": "+218",
+    "capital": "Tripoli",
+    "borders": [
+      "DZA",
+      "TCD",
+      "EGY",
+      "NER",
+      "SDN",
+      "TUN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ly.svg",
+      "png": "https://flagcdn.com/w320/ly.png"
+    }
+  },
+  "PT": {
+    "name": "Portugal",
+    "calling_code": "+351",
+    "capital": "Lisbon",
+    "borders": [
+      "ESP"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/pt.svg",
+      "png": "https://flagcdn.com/w320/pt.png"
+    }
+  },
+  "PK": {
+    "name": "Pakistan",
+    "calling_code": "+92",
+    "capital": "Islamabad",
+    "borders": [
+      "AFG",
+      "CHN",
+      "IND",
+      "IRN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/pk.svg",
+      "png": "https://flagcdn.com/w320/pk.png"
+    }
+  },
+  "MV": {
+    "name": "Maldives",
+    "calling_code": "+960",
+    "capital": "Malé",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/mv.svg",
+      "png": "https://flagcdn.com/w320/mv.png"
+    }
+  },
+  "MA": {
+    "name": "Morocco",
+    "calling_code": "+212",
+    "capital": "Rabat",
+    "borders": [
+      "DZA",
+      "ESH",
+      "ESP"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ma.svg",
+      "png": "https://flagcdn.com/w320/ma.png"
+    }
+  },
+  "BA": {
+    "name": "Bosnia and Herzegovina",
+    "calling_code": "+387",
+    "capital": "Sarajevo",
+    "borders": [
+      "HRV",
+      "MNE",
+      "SRB"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ba.svg",
+      "png": "https://flagcdn.com/w320/ba.png"
+    }
+  },
+  "WS": {
+    "name": "Samoa",
+    "calling_code": "+685",
+    "capital": "Apia",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ws.svg",
+      "png": "https://flagcdn.com/w320/ws.png"
+    }
+  },
+  "PS": {
+    "name": "Palestine",
+    "calling_code": "+970",
+    "capital": "Ramallah",
+    "borders": [
+      "ISR",
+      "EGY",
+      "JOR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ps.svg",
+      "png": "https://flagcdn.com/w320/ps.png"
+    }
+  },
+  "OM": {
+    "name": "Oman",
+    "calling_code": "+968",
+    "capital": "Muscat",
+    "borders": [
+      "SAU",
+      "ARE",
+      "YEM"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/om.svg",
+      "png": "https://flagcdn.com/w320/om.png"
+    }
+  },
+  "BH": {
+    "name": "Bahrain",
+    "calling_code": "+973",
+    "capital": "Manama",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/bh.svg",
+      "png": "https://flagcdn.com/w320/bh.png"
+    }
+  },
+  "US": {
+    "name": "United States",
+    "calling_code": "+1201",
+    "capital": "Washington, D.C.",
+    "borders": [
+      "CAN",
+      "MEX"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/us.svg",
+      "png": "https://flagcdn.com/w320/us.png"
+    }
+  },
+  "PR": {
+    "name": "Puerto Rico",
+    "calling_code": "+1787",
+    "capital": "San Juan",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/pr.svg",
+      "png": "https://flagcdn.com/w320/pr.png"
+    }
+  },
+  "IO": {
+    "name": "British Indian Ocean Territory",
+    "calling_code": "+246",
+    "capital": "Diego Garcia",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/io.svg",
+      "png": "https://flagcdn.com/w320/io.png"
+    }
+  },
+  "JE": {
+    "name": "Jersey",
+    "calling_code": "+44",
+    "capital": "Saint Helier",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/je.svg",
+      "png": "https://flagcdn.com/w320/je.png"
+    }
+  },
+  "MK": {
+    "name": "North Macedonia",
+    "calling_code": "+389",
+    "capital": "Skopje",
+    "borders": [
+      "ALB",
+      "BGR",
+      "GRC",
+      "UNK",
+      "SRB"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/mk.svg",
+      "png": "https://flagcdn.com/w320/mk.png"
+    }
+  },
+  "TN": {
+    "name": "Tunisia",
+    "calling_code": "+216",
+    "capital": "Tunis",
+    "borders": [
+      "DZA",
+      "LBY"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/tn.svg",
+      "png": "https://flagcdn.com/w320/tn.png"
+    }
+  },
+  "TT": {
+    "name": "Trinidad and Tobago",
+    "calling_code": "+1868",
+    "capital": "Port of Spain",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/tt.svg",
+      "png": "https://flagcdn.com/w320/tt.png"
+    }
+  },
+  "EE": {
+    "name": "Estonia",
+    "calling_code": "+372",
+    "capital": "Tallinn",
+    "borders": [
+      "LVA",
+      "RUS"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ee.svg",
+      "png": "https://flagcdn.com/w320/ee.png"
+    }
+  },
+  "SG": {
+    "name": "Singapore",
+    "calling_code": "+65",
+    "capital": "Singapore",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/sg.svg",
+      "png": "https://flagcdn.com/w320/sg.png"
+    }
+  },
+  "PA": {
+    "name": "Panama",
+    "calling_code": "+507",
+    "capital": "Panama City",
+    "borders": [
+      "COL",
+      "CRI"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/pa.svg",
+      "png": "https://flagcdn.com/w320/pa.png"
+    }
+  },
+  "CH": {
+    "name": "Switzerland",
+    "calling_code": "+41",
+    "capital": "Bern",
+    "borders": [
+      "AUT",
+      "FRA",
+      "ITA",
+      "LIE",
+      "DEU"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ch.svg",
+      "png": "https://flagcdn.com/w320/ch.png"
+    }
+  },
+  "UY": {
+    "name": "Uruguay",
+    "calling_code": "+598",
+    "capital": "Montevideo",
+    "borders": [
+      "ARG",
+      "BRA"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/uy.svg",
+      "png": "https://flagcdn.com/w320/uy.png"
+    }
+  },
+  "TJ": {
+    "name": "Tajikistan",
+    "calling_code": "+992",
+    "capital": "Dushanbe",
+    "borders": [
+      "AFG",
+      "CHN",
+      "KGZ",
+      "UZB"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/tj.svg",
+      "png": "https://flagcdn.com/w320/tj.png"
+    }
+  },
+  "TW": {
+    "name": "Taiwan",
+    "calling_code": "+886",
+    "capital": "Taipei",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/tw.svg",
+      "png": "https://flagcdn.com/w320/tw.png"
+    }
+  },
+  "ZA": {
+    "name": "South Africa",
+    "calling_code": "+27",
+    "capital": "Pretoria",
+    "borders": [
+      "BWA",
+      "LSO",
+      "MOZ",
+      "NAM",
+      "SWZ",
+      "ZWE"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/za.svg",
+      "png": "https://flagcdn.com/w320/za.png"
+    }
+  },
+  "LI": {
+    "name": "Liechtenstein",
+    "calling_code": "+423",
+    "capital": "Vaduz",
+    "borders": [
+      "AUT",
+      "CHE"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/li.svg",
+      "png": "https://flagcdn.com/w320/li.png"
+    }
+  },
+  "BR": {
+    "name": "Brazil",
+    "calling_code": "+55",
+    "capital": "Brasília",
+    "borders": [
+      "ARG",
+      "BOL",
+      "COL",
+      "GUF",
+      "GUY",
+      "PRY",
+      "PER",
+      "SUR",
+      "URY",
+      "VEN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/br.svg",
+      "png": "https://flagcdn.com/w320/br.png"
+    }
+  },
+  "AM": {
+    "name": "Armenia",
+    "calling_code": "+374",
+    "capital": "Yerevan",
+    "borders": [
+      "AZE",
+      "GEO",
+      "IRN",
+      "TUR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/am.svg",
+      "png": "https://flagcdn.com/w320/am.png"
+    }
+  },
+  "GE": {
+    "name": "Georgia",
+    "calling_code": "+995",
+    "capital": "Tbilisi",
+    "borders": [
+      "ARM",
+      "AZE",
+      "RUS",
+      "TUR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ge.svg",
+      "png": "https://flagcdn.com/w320/ge.png"
+    }
+  },
+  "AX": {
+    "name": "Åland Islands",
+    "calling_code": "+35818",
+    "capital": "Mariehamn",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ax.svg",
+      "png": "https://flagcdn.com/w320/ax.png"
+    }
+  },
+  "QA": {
+    "name": "Qatar",
+    "calling_code": "+974",
+    "capital": "Doha",
+    "borders": [
+      "SAU"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/qa.svg",
+      "png": "https://flagcdn.com/w320/qa.png"
+    }
+  },
+  "DM": {
+    "name": "Dominica",
+    "calling_code": "+1767",
+    "capital": "Roseau",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/dm.svg",
+      "png": "https://flagcdn.com/w320/dm.png"
+    }
+  },
+  "UA": {
+    "name": "Ukraine",
+    "calling_code": "+380",
+    "capital": "Kyiv",
+    "borders": [
+      "BLR",
+      "HUN",
+      "MDA",
+      "POL",
+      "ROU",
+      "RUS",
+      "SVK"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ua.svg",
+      "png": "https://flagcdn.com/w320/ua.png"
+    }
+  },
+  "GN": {
+    "name": "Guinea",
+    "calling_code": "+224",
+    "capital": "Conakry",
+    "borders": [
+      "CIV",
+      "GNB",
+      "LBR",
+      "MLI",
+      "SEN",
+      "SLE"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/gn.svg",
+      "png": "https://flagcdn.com/w320/gn.png"
+    }
+  },
+  "MO": {
+    "name": "Macau",
+    "calling_code": "+853",
+    "capital": null,
+    "borders": [
+      "CHN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/mo.svg",
+      "png": "https://flagcdn.com/w320/mo.png"
+    }
+  },
+  "EH": {
+    "name": "Western Sahara",
+    "calling_code": "+2125288",
+    "capital": "El Aaiún",
+    "borders": [
+      "DZA",
+      "MRT",
+      "MAR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/eh.svg",
+      "png": "https://flagcdn.com/w320/eh.png"
+    }
+  },
+  "CZ": {
+    "name": "Czechia",
+    "calling_code": "+420",
+    "capital": "Prague",
+    "borders": [
+      "AUT",
+      "DEU",
+      "POL",
+      "SVK"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/cz.svg",
+      "png": "https://flagcdn.com/w320/cz.png"
+    }
+  },
+  "AT": {
+    "name": "Austria",
+    "calling_code": "+43",
+    "capital": "Vienna",
+    "borders": [
+      "CZE",
+      "DEU",
+      "HUN",
+      "ITA",
+      "LIE",
+      "SVK",
+      "SVN",
+      "CHE"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/at.svg",
+      "png": "https://flagcdn.com/w320/at.png"
+    }
+  },
+  "KN": {
+    "name": "Saint Kitts and Nevis",
+    "calling_code": "+1869",
+    "capital": "Basseterre",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/kn.svg",
+      "png": "https://flagcdn.com/w320/kn.png"
+    }
+  },
+  "LC": {
+    "name": "Saint Lucia",
+    "calling_code": "+1758",
+    "capital": "Castries",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/lc.svg",
+      "png": "https://flagcdn.com/w320/lc.png"
+    }
+  },
+  "YE": {
+    "name": "Yemen",
+    "calling_code": "+967",
+    "capital": "Sana'a",
+    "borders": [
+      "OMN",
+      "SAU"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ye.svg",
+      "png": "https://flagcdn.com/w320/ye.png"
+    }
+  },
+  "RW": {
+    "name": "Rwanda",
+    "calling_code": "+250",
+    "capital": "Kigali",
+    "borders": [
+      "BDI",
+      "COD",
+      "TZA",
+      "UGA"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/rw.svg",
+      "png": "https://flagcdn.com/w320/rw.png"
+    }
+  },
+  "MC": {
+    "name": "Monaco",
+    "calling_code": "+377",
+    "capital": "Monaco",
+    "borders": [
+      "FRA"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/mc.svg",
+      "png": "https://flagcdn.com/w320/mc.png"
+    }
+  },
+  "ST": {
+    "name": "São Tomé and Príncipe",
+    "calling_code": "+239",
+    "capital": "São Tomé",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/st.svg",
+      "png": "https://flagcdn.com/w320/st.png"
+    }
+  },
+  "CG": {
+    "name": "Republic of the Congo",
+    "calling_code": "+242",
+    "capital": "Brazzaville",
+    "borders": [
+      "AGO",
+      "CMR",
+      "CAF",
+      "COD",
+      "GAB"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/cg.svg",
+      "png": "https://flagcdn.com/w320/cg.png"
+    }
+  },
+  "PY": {
+    "name": "Paraguay",
+    "calling_code": "+595",
+    "capital": "Asunción",
+    "borders": [
+      "ARG",
+      "BOL",
+      "BRA"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/py.svg",
+      "png": "https://flagcdn.com/w320/py.png"
+    }
+  },
+  "BV": {
+    "name": "Bouvet Island",
+    "calling_code": "+47",
+    "capital": null,
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/bv.svg",
+      "png": "https://flagcdn.com/w320/bv.png"
+    }
+  },
+  "MZ": {
+    "name": "Mozambique",
+    "calling_code": "+258",
+    "capital": "Maputo",
+    "borders": [
+      "MWI",
+      "ZAF",
+      "SWZ",
+      "TZA",
+      "ZMB",
+      "ZWE"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/mz.svg",
+      "png": "https://flagcdn.com/w320/mz.png"
+    }
+  },
+  "FR": {
+    "name": "France",
+    "calling_code": "+33",
+    "capital": "Paris",
+    "borders": [
+      "AND",
+      "BEL",
+      "DEU",
+      "ITA",
+      "LUX",
+      "MCO",
+      "ESP",
+      "CHE"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/fr.svg",
+      "png": "https://flagcdn.com/w320/fr.png"
+    }
+  },
+  "SZ": {
+    "name": "Eswatini",
+    "calling_code": "+268",
+    "capital": "Mbabane",
+    "borders": [
+      "MOZ",
+      "ZAF"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/sz.svg",
+      "png": "https://flagcdn.com/w320/sz.png"
+    }
+  },
+  "BB": {
+    "name": "Barbados",
+    "calling_code": "+1246",
+    "capital": "Bridgetown",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/bb.svg",
+      "png": "https://flagcdn.com/w320/bb.png"
+    }
+  },
+  "ES": {
+    "name": "Spain",
+    "calling_code": "+34",
+    "capital": "Madrid",
+    "borders": [
+      "AND",
+      "FRA",
+      "GIB",
+      "PRT",
+      "MAR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/es.svg",
+      "png": "https://flagcdn.com/w320/es.png"
+    }
+  },
+  "TH": {
+    "name": "Thailand",
+    "calling_code": "+66",
+    "capital": "Bangkok",
+    "borders": [
+      "MMR",
+      "KHM",
+      "LAO",
+      "MYS"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/th.svg",
+      "png": "https://flagcdn.com/w320/th.png"
+    }
+  },
+  "GW": {
+    "name": "Guinea-Bissau",
+    "calling_code": "+245",
+    "capital": "Bissau",
+    "borders": [
+      "GIN",
+      "SEN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/gw.svg",
+      "png": "https://flagcdn.com/w320/gw.png"
+    }
+  },
+  "AO": {
+    "name": "Angola",
+    "calling_code": "+244",
+    "capital": "Luanda",
+    "borders": [
+      "COG",
+      "COD",
+      "ZMB",
+      "NAM"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ao.svg",
+      "png": "https://flagcdn.com/w320/ao.png"
+    }
+  },
+  "IN": {
+    "name": "India",
+    "calling_code": "+91",
+    "capital": "New Delhi",
+    "borders": [
+      "BGD",
+      "BTN",
+      "MMR",
+      "CHN",
+      "NPL",
+      "PAK"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/in.svg",
+      "png": "https://flagcdn.com/w320/in.png"
+    }
+  },
+  "MQ": {
+    "name": "Martinique",
+    "calling_code": "+596",
+    "capital": "Fort-de-France",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/mq.svg",
+      "png": "https://flagcdn.com/w320/mq.png"
+    }
+  },
+  "NC": {
+    "name": "New Caledonia",
+    "calling_code": "+687",
+    "capital": "Nouméa",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/nc.svg",
+      "png": "https://flagcdn.com/w320/nc.png"
+    }
+  },
+  "SC": {
+    "name": "Seychelles",
+    "calling_code": "+248",
+    "capital": "Victoria",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/sc.svg",
+      "png": "https://flagcdn.com/w320/sc.png"
+    }
+  },
+  "FK": {
+    "name": "Falkland Islands",
+    "calling_code": "+500",
+    "capital": "Stanley",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/fk.svg",
+      "png": "https://flagcdn.com/w320/fk.png"
+    }
+  },
+  "GB": {
+    "name": "United Kingdom",
+    "calling_code": "+44",
+    "capital": "London",
+    "borders": [
+      "IRL"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/gb.svg",
+      "png": "https://flagcdn.com/w320/gb.png"
+    }
+  },
+  "FJ": {
+    "name": "Fiji",
+    "calling_code": "+679",
+    "capital": "Suva",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/fj.svg",
+      "png": "https://flagcdn.com/w320/fj.png"
+    }
+  },
+  "SM": {
+    "name": "San Marino",
+    "calling_code": "+378",
+    "capital": "City of San Marino",
+    "borders": [
+      "ITA"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/sm.svg",
+      "png": "https://flagcdn.com/w320/sm.png"
+    }
+  },
+  "ML": {
+    "name": "Mali",
+    "calling_code": "+223",
+    "capital": "Bamako",
+    "borders": [
+      "DZA",
+      "BFA",
+      "GIN",
+      "CIV",
+      "MRT",
+      "NER",
+      "SEN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ml.svg",
+      "png": "https://flagcdn.com/w320/ml.png"
+    }
+  },
+  "CA": {
+    "name": "Canada",
+    "calling_code": "+1",
+    "capital": "Ottawa",
+    "borders": [
+      "USA"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ca.svg",
+      "png": "https://flagcdn.com/w320/ca.png"
+    }
+  },
+  "JM": {
+    "name": "Jamaica",
+    "calling_code": "+1876",
+    "capital": "Kingston",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/jm.svg",
+      "png": "https://flagcdn.com/w320/jm.png"
+    }
+  },
+  "NR": {
+    "name": "Nauru",
+    "calling_code": "+674",
+    "capital": "Yaren",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/nr.svg",
+      "png": "https://flagcdn.com/w320/nr.png"
+    }
+  },
+  "ID": {
+    "name": "Indonesia",
+    "calling_code": "+62",
+    "capital": "Jakarta",
+    "borders": [
+      "TLS",
+      "MYS",
+      "PNG"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/id.svg",
+      "png": "https://flagcdn.com/w320/id.png"
+    }
+  },
+  "GU": {
+    "name": "Guam",
+    "calling_code": "+1671",
+    "capital": "Hagåtña",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/gu.svg",
+      "png": "https://flagcdn.com/w320/gu.png"
+    }
+  },
+  "CI": {
+    "name": "Ivory Coast",
+    "calling_code": "+225",
+    "capital": "Yamoussoukro",
+    "borders": [
+      "BFA",
+      "GHA",
+      "GIN",
+      "LBR",
+      "MLI"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ci.svg",
+      "png": "https://flagcdn.com/w320/ci.png"
+    }
+  },
+  "KW": {
+    "name": "Kuwait",
+    "calling_code": "+965",
+    "capital": "Kuwait City",
+    "borders": [
+      "IRQ",
+      "SAU"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/kw.svg",
+      "png": "https://flagcdn.com/w320/kw.png"
+    }
+  },
+  "PH": {
+    "name": "Philippines",
+    "calling_code": "+63",
+    "capital": "Manila",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ph.svg",
+      "png": "https://flagcdn.com/w320/ph.png"
+    }
+  },
+  "GY": {
+    "name": "Guyana",
+    "calling_code": "+592",
+    "capital": "Georgetown",
+    "borders": [
+      "BRA",
+      "SUR",
+      "VEN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/gy.svg",
+      "png": "https://flagcdn.com/w320/gy.png"
+    }
+  },
+  "HU": {
+    "name": "Hungary",
+    "calling_code": "+36",
+    "capital": "Budapest",
+    "borders": [
+      "AUT",
+      "HRV",
+      "ROU",
+      "SRB",
+      "SVK",
+      "SVN",
+      "UKR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/hu.svg",
+      "png": "https://flagcdn.com/w320/hu.png"
+    }
+  },
+  "MX": {
+    "name": "Mexico",
+    "calling_code": "+52",
+    "capital": "Mexico City",
+    "borders": [
+      "BLZ",
+      "GTM",
+      "USA"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/mx.svg",
+      "png": "https://flagcdn.com/w320/mx.png"
+    }
+  },
+  "KP": {
+    "name": "North Korea",
+    "calling_code": "+850",
+    "capital": "Pyongyang",
+    "borders": [
+      "CHN",
+      "KOR",
+      "RUS"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/kp.svg",
+      "png": "https://flagcdn.com/w320/kp.png"
+    }
+  },
+  "RO": {
+    "name": "Romania",
+    "calling_code": "+40",
+    "capital": "Bucharest",
+    "borders": [
+      "BGR",
+      "HUN",
+      "MDA",
+      "SRB",
+      "UKR"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/ro.svg",
+      "png": "https://flagcdn.com/w320/ro.png"
+    }
+  },
+  "SR": {
+    "name": "Suriname",
+    "calling_code": "+597",
+    "capital": "Paramaribo",
+    "borders": [
+      "BRA",
+      "GUF",
+      "GUY"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/sr.svg",
+      "png": "https://flagcdn.com/w320/sr.png"
+    }
+  },
+  "AS": {
+    "name": "American Samoa",
+    "calling_code": "+1684",
+    "capital": "Pago Pago",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/as.svg",
+      "png": "https://flagcdn.com/w320/as.png"
+    }
+  },
+  "NP": {
+    "name": "Nepal",
+    "calling_code": "+977",
+    "capital": "Kathmandu",
+    "borders": [
+      "CHN",
+      "IND"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/np.svg",
+      "png": "https://flagcdn.com/w320/np.png"
+    }
+  },
+  "TD": {
+    "name": "Chad",
+    "calling_code": "+235",
+    "capital": "N'Djamena",
+    "borders": [
+      "CMR",
+      "CAF",
+      "LBY",
+      "NER",
+      "NGA",
+      "SDN"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/td.svg",
+      "png": "https://flagcdn.com/w320/td.png"
+    }
+  },
+  "RS": {
+    "name": "Serbia",
+    "calling_code": "+381",
+    "capital": "Belgrade",
+    "borders": [
+      "BIH",
+      "BGR",
+      "HRV",
+      "HUN",
+      "UNK",
+      "MKD",
+      "MNE",
+      "ROU"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/rs.svg",
+      "png": "https://flagcdn.com/w320/rs.png"
+    }
+  },
+  "KH": {
+    "name": "Cambodia",
+    "calling_code": "+855",
+    "capital": "Phnom Penh",
+    "borders": [
+      "LAO",
+      "THA",
+      "VNM"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/kh.svg",
+      "png": "https://flagcdn.com/w320/kh.png"
+    }
+  },
+  "MY": {
+    "name": "Malaysia",
+    "calling_code": "+60",
+    "capital": "Kuala Lumpur",
+    "borders": [
+      "BRN",
+      "IDN",
+      "THA"
+    ],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/my.svg",
+      "png": "https://flagcdn.com/w320/my.png"
+    }
+  },
+  "CY": {
+    "name": "Cyprus",
+    "calling_code": "+357",
+    "capital": "Nicosia",
+    "borders": [],
+    "flag": {
+      "emoji": null,
+      "svg": "https://flagcdn.com/cy.svg",
+      "png": "https://flagcdn.com/w320/cy.png"
+    }
+  }
+}
