@@ -45,6 +45,12 @@ NetRecon/
 ├─ requirements.txt
 ├─ generate_country_meta.py
 ├─ domain_resolver.py
+├─ formatters.py
+├─ logging_config.py
+├─ metrics.py
+├─ prometheus_exporter.py
+├─ rate_limiter.py
+├─ config.py
 └─ data/
    ├─ GeoLite2-City.mmdb
    ├─ GeoLite2-ASN.mmdb
@@ -63,13 +69,18 @@ NetRecon/
     - Copy the source code
     - Package the MaxMind databases (if present in data/)
     - Configure Gunicorn as the WSGI server
+    - Run redis server on 6379
 
   - **Run the Container**
     ```
-    docker run -p 5000:5000 netrecon
+    docker-compose up --build
     ```
 
-    - **Example Usage:**
+    - **Example Usages:**
       ```
       curl "http://localhost:5000/ip/8.8.8.8"
+
+      curl "http://localhost:5000/ip/34.76.33.29?compat=ipwhois" // For ipwhois exact data
+
+      curl "http://localhost:5000/metrics/prom"
       ```
