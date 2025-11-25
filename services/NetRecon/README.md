@@ -82,5 +82,8 @@ NetRecon/
 
       curl "http://localhost:5000/ip/34.76.33.29?compat=ipwhois" // For ipwhois exact data
 
-      curl "http://localhost:5000/metrics/prom"
+      curl "http://localhost:5000/metrics"
+
+      curl "http://localhost:5000/metrics/prom" // For prometheus data
+
       ```
